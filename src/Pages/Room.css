@@ -1,0 +1,78 @@
+.background {
+    background-image: url(../Assets/Images/Room/room_bg.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.laptop-cont {
+    position: relative;
+    top: 75%;
+    left: 12%;
+}
+
+.laptop-object {
+    width: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.portfolio-screen {
+    background-color: #FDE0A6;
+    width: 23.1%;
+    height: 23.1%;
+    position: relative;
+    top: -0.8%;
+    left: 32.9%;
+    border-radius: 8px;
+}
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #436854;
+  --color-3: #80587c;
+}
+
+.title-word-2 {
+  --color-1: #7b370a;
+  --color-2: #6c9c96;
+  --color-3: #4d1722;
+}
+
+.title-word-3 {
+  --color-1: #ca534e;
+  --color-2: #dc9d55;
+  --color-3: #3e5d59;
+}
+
+.title-word-4 {
+  --color-1: #406473;
+  --color-2: #DF8453;
+  --color-3: #ab5a58;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 1.8vw;
+  text-transform: uppercase;    
+  padding-top: 23%;
+}
