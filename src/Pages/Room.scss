@@ -21,12 +21,12 @@
 
 .portfolio-screen {
     background-color: #FDE0A6;
-    width: 23.1%;
-    height: 23.1%;
-    position: relative;
-    top: -0.8%;
-    left: 32.9%;
+    width: 23%;
+    height: 23%;
+    margin-top: 9vh;
+    margin-left: 44.5%;
     border-radius: 8px;
+    transform: translate(-50%, -50%);
 }
 
 .title-word {
@@ -76,3 +76,12 @@
   text-transform: uppercase;    
   padding-top: 23%;
 }
+
+.cassette {
+  width: 130px;
+  position: relative;
+  top: 76%;
+  left: -30%;
+}
+
+
