@@ -52,8 +52,8 @@ $codred: #ac5e47;
 // MISC
 .wrap{
   width: 100%;
-  margin-top: -15vh;
-  margin-left: -17vw;
+  margin-top: 50vh;
+  margin-left: -13vw;
   justify-content: center;
   align-items: center
 }
@@ -286,55 +286,5 @@ $codred: #ac5e47;
 @media (min-width: 320px) and (max-width: 480px) {
     .monitor {
         margin-left: 58px !important;
-    }
-}
-
-@media (min-width: 700px) and (max-width: 900px) {
-
-    .laptop-cont {
-        position: relative;
-        top: 76%;
-        left: 19.8%;
-    }
-
-    .comp .mid {
-        width: 25.7%;
-        height: 48.5%;
-        overflow: hidden;
-    }
-
-    .comp .site {
-        overflow: hidden;
-        position: absolute;
-        width: 76px !important;
-        height: 86px !important;
-        border-radius: 0px 0px 0px 10px;
-        bottom: 0;
-        right: 0;
-    }
-
-    .base {
-        width: 24%;
-        margin-top: -10.5%;
-        margin-left: 30.3%;
-    }
-    .comp .site .cerrar {
-        margin-left: 5px;
-        padding-left: 5px;
-    }
-
-    .comp .site .cerrar > div {
-        width: 1.5px;
-        height: 1.5px;
-        
-    }
-
-
-    .left-screen {
-      border-radius: 6px 0px 0px 6px !important;
-    }
-
-    .right-screen {
-      border-radius: 0px 6px 6px 0px !important;
     }
 }

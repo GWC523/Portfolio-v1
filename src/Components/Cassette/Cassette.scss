@@ -1,10 +1,6 @@
 .music {
-  display: block;
-  margin: auto;
-  position: relative;
-  width: 50%;
-  min-width: 300px;
-  height: 200px;
+  position: absolute;
+  width: 100%;
   border: 0px solid #000;
   color: #DF8453;
 }
@@ -13,20 +9,20 @@
 .noot-2,
 .noot-3,
 .noot-4 {
-  position: absolute;
+  position: fixed;
   animation: notes 1.5s infinite linear;
   font-size: 35px;
   opacity: 0;
 }
 
 .noot-1 {
-  top: 60px;
+  top: 320px;
   left: 0;
   animation-delay: 0.1s;
 }
 
 .noot-2 {
-  top: 30px;
+  top: 200px;
   left: 30%;
   animation-delay: 1s;
 }
@@ -60,4 +56,11 @@
     transform: scale(1.5) translate(100%, -100%);
     opacity: 0;
   }
+}
+
+.cassette {
+  width: 140px;
+  position: relative;
+  left: -270%;
+  z-index: 10;
 }

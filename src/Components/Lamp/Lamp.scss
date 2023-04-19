@@ -1,0 +1,31 @@
+.lamp {
+ width: 120px;
+ position: absolute;
+ top: 59%;
+ left: 18%;
+}
+
+.light {
+  border-radius:50%;
+  position: absolute;
+  background-color: #fff07c93;
+  width:55px;
+  height: 60px;
+  top: 65%;
+  left: 23.8%;
+  box-shadow: 0 0 50px 15px #fff07c;
+}
+
+.spot-light {
+  border-radius: 100%;
+  position: absolute;
+  background-color: #fff07ca5;
+  box-shadow: 0 0 50px 5px #fff07c;
+  width:120px;
+  height: 20px;
+  top: 80%;
+  left: 25.8%;
+  z-index: 1;
+}
+
+
