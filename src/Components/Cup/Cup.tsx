@@ -27,6 +27,7 @@ function Cup({func} : CupProps) {
             className='cup'
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
+            title="LinkedIn"
         />
         {isHovering && (
             <div id="steam-wrap">

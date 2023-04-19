@@ -127,6 +127,12 @@ body {
   margin-left: auto;
 }
 
+.string-light-cont {
+	width: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .table-wrapper {
   width: 100%;
   max-width: 1550px;
@@ -134,8 +140,18 @@ body {
   margin-left: auto;
 }
 
+.window-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.shelf-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .table-object {
-  margin-top: -8vh;
+  margin-top: -22vh;
   border-bottom: 21vh solid #7C5B54;
 	border-left: 250px solid transparent;
 	border-right: 250px solid transparent;
@@ -159,9 +175,19 @@ body {
 
 .window {
   width:600px;
-  position: fixed;
-  right: 29%;
-  bottom: 20%;
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  margin-top: -350px;
+  margin-left: -300px;
+}
+
+.shelf {
+  width: 400px;
+  position: relative;
+  margin-top: 100px;
+  margin-left: -1200px;
+
 }
 
 

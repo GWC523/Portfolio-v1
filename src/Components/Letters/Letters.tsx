@@ -25,6 +25,7 @@ function Letters() {
             className='letters'
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
+            title="Contact Me"
         />
         {isHovering && (
         <div className='sparkle-wrap'>

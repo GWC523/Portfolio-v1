@@ -43,6 +43,7 @@ function Laptop() {
   return (
         <div 
             className="wrap"
+            title="Projects"
         >
             <div className="comp">
                 <div 

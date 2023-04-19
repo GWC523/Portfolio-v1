@@ -7,31 +7,21 @@ import LampImg from "../../Assets/Images/Room/room_lamp.svg";
 import "./Lamp.scss";
 
 function Lamp() {
-  const [isHovering, setIsHovering] = useState<boolean>(false);
   const [isOn, setOn] = useState<boolean>(false);
 
   const toggleLamp = () => {
     setOn(!isOn)
   }
 
-  const handleMouseOver = () => {
-    setIsHovering(true);
-  };
-
-  const handleMouseOut = () => {
-    setIsHovering(false);
-  };
   return (
     <>
         <img 
             src={LampImg} 
             alt="lamp" 
             className='lamp'
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
             onClick={toggleLamp}
         />
-        {(isHovering || isOn) && (
+        {(isOn) && (
             <>
             <div className='light'>
             </div>

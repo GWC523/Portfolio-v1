@@ -18,6 +18,9 @@ import Letters from '../Components/Letters/Letters';
 import Clock from '../Components/Clock/Clock';
 import Lamp from '../Components/Lamp/Lamp';
 import Window from '../Assets/Images/Room/room_windows.svg';
+import Shelf from '../Assets/Images/Room/room_shelf.svg';
+import Light from '../Components/Light/Light';
+import LightSwitch from '../Components/Light Switch/LightSwitch';
 
 
 
@@ -26,6 +29,7 @@ function Room(): JSX.Element {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const [isOn, setIsOn] = useState<boolean>(false);
 
   const togglePlay: Function = () => {
     const audio = audioRef.current;
@@ -39,6 +43,10 @@ function Room(): JSX.Element {
 
     setIsPlaying(!isPlaying);
 
+  }
+
+  const toggleOn: Function = () => {
+    setIsOn(!isOn);
   }
 
   useEffect(() => {
@@ -83,6 +91,18 @@ function Room(): JSX.Element {
     <>
         {(isLandscape && !isMobile)? (
             <div className='background' >
+              <img src={Shelf} className='shelf'/>
+              <div className='light-switch'>
+                <LightSwitch
+                  func={toggleOn}
+                  state={isOn}
+                />
+              </div>
+              <div className='string-light-cont'>
+                <Light
+                  isOn={isOn}
+                />
+              </div>
               <img src={Window} className='window'/>
               <div className='table-cont'>
                 <div className='laptop-cont'>
@@ -94,33 +114,33 @@ function Room(): JSX.Element {
                     isPlaying={isPlaying}
                 />
                 </div>
-               <div className='cup-cont'>
-                 <Cup/>
-               </div>
-               <div className='pencilcase-cont'>
-                  <img src={PencilCase} className='pencilcase'/>
-               </div>
-               <div className='vase-cont'>
-                  <img src={Vase} className='vase'/>
-               </div>
-               <div className='letters-cont'>
-                  <Letters/>
-               </div>
-              <div className='time-cont'>
-                <Clock/>
-              </div>
-              <div className='lamp-cont'>
-                <Lamp/>
-               </div>
-             
-
-              <div className='table-wrapper'>
-                <div className='table-object'>
+                <div className='cup-cont'>
+                  <Cup/>
                 </div>
+                <div className='pencilcase-cont'>
+                    <img src={PencilCase} className='pencilcase'/>
+                </div>
+                <div className='vase-cont'>
+                    <img src={Vase} className='vase'/>
+                </div>
+                <div className='letters-cont'>
+                    <Letters/>
+                </div>
+                <div className='time-cont'>
+                  <Clock/>
+                </div>
+                <div className='lamp-cont'>
+                  <Lamp/>
+                </div>
+              
+
+                <div className='table-wrapper'>
+                  <div className='table-object'>
+                  </div>
+                </div>
+                  <audio ref={audioRef} src={morningLofiMusic} loop/>
               </div>
-              <audio ref={audioRef} src={morningLofiMusic} loop/>
-              </div>
-            </div>
+             </div>
         ) : (
             <>
                 Is Portrait
