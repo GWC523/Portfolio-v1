@@ -8,9 +8,10 @@ import './Cup.scss';
 
 interface CupProps {
   func?: Function,
+  isDay: Boolean
 }
 
-function Cup({func} : CupProps) {
+function Cup({func, isDay} : CupProps) {
   const [isHovering, setIsHovering] = useState(false);
 
   const handleMouseOver = () => {
@@ -24,17 +25,17 @@ function Cup({func} : CupProps) {
     <>
         <img 
             src={CupImg} 
-            className='cup'
+            className={isDay ? 'cup' : 'cup night'}
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
-            title="LinkedIn"
+            title='LinkedIn'
         />
         {isHovering && (
-            <div id="steam-wrap">
-                <div className="steam" id="steam-one"></div>
-                <div className="steam" id="steam-two"></div>
-                <div className="steam" id="steam-three"></div>
-                <div className="steam" id="steam-four"></div>
+            <div id='steam-wrap'>
+                <div className='steam' id='steam-one'></div>
+                <div className='steam' id='steam-two'></div>
+                <div className='steam' id='steam-three'></div>
+                <div className='steam' id='steam-four'></div>
             </div>
         )}
     </>

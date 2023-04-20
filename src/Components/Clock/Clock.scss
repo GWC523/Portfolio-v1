@@ -15,8 +15,24 @@
 }
 
 .time-text {
-    margin-left: -5%;
-    color:#305944 !important;
+  margin-left: -5%;
+  color:#305944;
 }
+
+.clock-night {
+  border: 5px solid #d5b1d5;
+  background-color: #f3a0d8;
+  box-shadow: 0 0 3px pink, 0 0 5px pink, 0 0 10px pink, 0 0 100px pink;
+  z-index: 20;
+}
+
+.time-light {
+  color: white;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white;
+}
+
+
+
+
 
 

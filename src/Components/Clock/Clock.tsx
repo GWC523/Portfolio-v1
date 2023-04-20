@@ -6,7 +6,11 @@ import ClockImg from '../../Assets/Images/Room/room_clock.svg';
 /* CSS */
 import './Clock.scss';
 
-function Clock() {
+interface ClockProps {
+  isDay: Boolean
+}
+
+function Clock({isDay} : ClockProps) {
   const [date, setDate] = useState(new Date());
 
   function refreshClock() {
@@ -22,8 +26,8 @@ function Clock() {
 
   return (
     <>
-        <div className='time'>
-            <span className='time-text'>{date.toLocaleTimeString().replace("AM","").replace("PM","")}</span>
+        <div className={isDay ? 'time' : 'time clock-night'}>
+            <span className={isDay ? 'time-text' : 'time-text time-light'}>{date.toLocaleTimeString().replace("AM","").replace("PM","")}</span>
         </div>
     </>
   )

@@ -6,7 +6,11 @@ import LettersImg from "../../Assets/Images/Room/room_letters.svg";
 /* CSS */
 import './Letters.scss';
 
-function Letters() {
+interface LettersProps {
+  isDay: Boolean
+}
+
+function Letters({isDay} : LettersProps) {
   const [isHovering, setIsHovering] = useState(false);
 
   const handleMouseOver = () => {
@@ -22,18 +26,18 @@ function Letters() {
         <img 
             src={LettersImg} 
             alt='letters' 
-            className='letters'
+            className={isDay ? 'letters' : 'letters night'}
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
             title="Contact Me"
         />
         {isHovering && (
         <div className='sparkle-wrap'>
-            <div className='sparkle-1'></div>
-            <div className='sparkle-2'></div>
-            <div className='sparkle-3'></div>
-            <div className='sparkle-4'></div>
-            <div className='sparkle-5'></div>
+            <div className={isDay ? 'sparkle-1' : 'sparkle-1 sparkle-glow'}></div>
+            <div className={isDay ? 'sparkle-2' : 'sparkle-2 sparkle-glow'}></div>
+            <div className={isDay ? 'sparkle-3' : 'sparkle-3 sparkle-glow'}></div>
+            <div className={isDay ? 'sparkle-4' : 'sparkle-4 sparkle-glow'}></div>
+            <div className={isDay ? 'sparkle-5' : 'sparkle-5 sparkle-glow'}></div>
         </div>
         )}
     </>

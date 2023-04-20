@@ -1,11 +1,24 @@
 body {
-  background-color: #FAE5BB !important;
+  margin: 0;
 }
 
 .background {
-    overflow: hidden;
+    background-color: #FAE5BB;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
+.background-night {
+    background-color: #352139;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 .laptop-cont {
     position: relative;
@@ -103,12 +116,6 @@ body {
   margin-left: auto;
 }
 
-.lamp-cont {
-	width: 100px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .vase-cont {
 	width: 110px;
   margin-right: auto;
@@ -121,14 +128,13 @@ body {
   margin-left: auto;
 }
 
-.time-cont {
+.lamp-cont, .time-cont, .string-light-cont {
 	width: 100px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.string-light-cont {
-	width: 100px;
+.resume-cont, .note-cont, .wallclock-cont, .pictures-cont, .window-cont, .light-switch-cont {
   margin-right: auto;
   margin-left: auto;
 }
@@ -140,22 +146,21 @@ body {
   margin-left: auto;
 }
 
-.window-wrapper {
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .shelf-wrapper {
   margin-right: auto;
   margin-left: auto;
 }
 
 .table-object {
-  margin-top: -22vh;
+  margin-top: -4vh;
   border-bottom: 21vh solid #7C5B54;
 	border-left: 250px solid transparent;
 	border-right: 250px solid transparent;
-  
+  z-index: -5;
+}
+
+.table-night {
+  border-bottom: 21vh solid #392b35;
 }
 
 .pencilcase {
@@ -175,11 +180,9 @@ body {
 
 .window {
   width:600px;
-  position: fixed; /* or absolute */
-  top: 50%;
-  left: 50%;
-  margin-top: -350px;
-  margin-left: -300px;
+  position: relative;
+  margin-top: -440px;
+  margin-left: 0px;
 }
 
 .shelf {
@@ -187,7 +190,28 @@ body {
   position: relative;
   margin-top: 100px;
   margin-left: -1200px;
+}
 
+.note {
+  width: 80px;
+  position: fixed;
+  top: 63%;
+  right: 50%;
+
+  margin-right: -400px;
+  z-index: 20;
+}
+
+.night {
+  filter: hue-rotate(250deg) brightness(0.4) contrast(1.4);
+}
+
+.night-2 {
+  filter: hue-rotate(250deg) brightness(0.3) contrast(1.4);
+}
+
+.night-time {
+  transform: rotate(45deg);
 }
 
 

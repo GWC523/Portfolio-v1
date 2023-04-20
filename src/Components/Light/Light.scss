@@ -1,9 +1,9 @@
 .string-light {
     width: 450px;
     position: fixed;
-    top: 50%;
+    top: -5%;
     right: 50%;
-    margin-top: -400px;
+
     margin-right: 350px;
     z-index: 20;
 }
@@ -12,57 +12,56 @@
     width: 10px;
     height: 10px;
     position: fixed;
-    top: 50%;
+    top: -5%;
     right: 50%;
     background-color: #ffe96f;
     border-radius: 100px;
     z-index: 20;
-    box-shadow: 0 0 40px 20px #fff07c;
-
+    box-shadow: 0 0 50px 15px #fff07c;
 }
 
 .bulb-light-1 {
-    margin-top: -350px;
+    margin-top: 50px;
     margin-right: 370px;
 }
 
 .bulb-light-2 {
-    margin-top: -330px;
+    margin-top: 71px;
     margin-right: 416px;
 }
 
 .bulb-light-3 {
-    margin-top: -310px;
+    margin-top: 86px;
     margin-right: 466px;
 }
 
 .bulb-light-4 {
-    margin-top: -305px;
-    margin-right: 519px;
+    margin-top: 96px;
+    margin-right: 518px;
 }
 
 .bulb-light-5 {
-    margin-top: -305px;
+    margin-top: 98px;
     margin-right: 570px;
 }
 
 .bulb-light-6 {
-    margin-top: -305px;
-    margin-right: 625px;
+    margin-top: 95px;
+    margin-right: 623px;
 }
 
 .bulb-light-7 {
-    margin-top: -315px;
+    margin-top: 85px;
     margin-right: 676px;
 }
 
 .bulb-light-8 {
-    margin-top: -330px;
+    margin-top: 70px;
     margin-right: 725px;
 }
 
 .bulb-light-9 {
-    margin-top: -348px;
-    margin-right: 772px;
+    margin-top: 51px;
+    margin-right: 770px;
 }
 

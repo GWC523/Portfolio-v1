@@ -7,13 +7,14 @@ import StringLightImg from '../../Assets/Images/Room/room_light.svg';
 import './Light.scss';
 
 interface LightProps {
-  isOn: Boolean
+  isOn: Boolean,
+  isDay: Boolean
 }
 
-function Light({isOn}: LightProps) {
+function Light({isOn, isDay}: LightProps) {
   return (
     <>
-        <img src={StringLightImg} alt='string light' className='string-light'/>
+        <img src={StringLightImg} alt='string light' className={isDay ? 'string-light' : 'string-light night'}/>
         {isOn && (
             <>
             <div className='bulb-light-1 glow'></div>

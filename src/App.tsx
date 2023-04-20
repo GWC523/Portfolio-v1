@@ -24,7 +24,6 @@ export const ThemeContext = React.createContext<IThemeContext>({
 });
 
 function App() {
-  document.title = "GWC"
 
   //Set light mode or dark mode
   const [theme, setTheme] = useState("dark");

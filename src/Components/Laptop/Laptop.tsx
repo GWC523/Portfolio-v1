@@ -4,7 +4,11 @@ import laptop from "../../Assets/Images/Room/room_laptop.svg"
 /* CSS */
 import "./Laptop.scss";
 
-function Laptop() {
+interface LaptopProps {
+  isDay: Boolean,
+}
+
+function Laptop({isDay} : LaptopProps) {
 
   const [style, setStyle] = useState({
     display: 'none',
@@ -41,13 +45,11 @@ function Laptop() {
   }
 
   return (
-        <div 
-            className="wrap"
-            title="Projects"
-        >
+        <div className="wrap">
             <div className="comp">
                 <div 
                     className="monitor"
+                    title="Projects"
                     onMouseEnter={e => {
                         handleOnHover();
                     }}
@@ -55,7 +57,7 @@ function Laptop() {
                         handleOffHover();
                     }}
                 >
-                    <div className="mid left-screen">
+                    <div className={isDay ? "mid left-screen" : "mid left-screen on"}>
                     <div 
                         className="site"
                         style={siteStyle}
@@ -116,7 +118,7 @@ function Laptop() {
                         </div>
                     </div>
                     </div>
-                    <div className="mid codigo right-screen">
+                    <div className={isDay ? "mid codigo right-screen" : "mid codigo right-screen on-2"}>
                     <div className="line">
                         <div className="item var"></div>
                         <div className="item cont"></div>
@@ -232,7 +234,7 @@ function Laptop() {
                     <div className="base">
                     <img 
                         src={laptop} 
-                        className="keyboard"
+                        className={isDay ? "keyboard" : "keyboard night"}
                     />
                 </div>
             </div>

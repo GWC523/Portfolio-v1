@@ -21,6 +21,10 @@ import Window from '../Assets/Images/Room/room_windows.svg';
 import Shelf from '../Assets/Images/Room/room_shelf.svg';
 import Light from '../Components/Light/Light';
 import LightSwitch from '../Components/Light Switch/LightSwitch';
+import Pictures from '../Components/Pictures/Pictures';
+import Resume from '../Components/Resume/Resume';
+import Note from '../Assets/Images/Room/room_note.svg';
+import Wallclock from '../Components/WallClock/Wallclock';
 
 
 
@@ -30,6 +34,7 @@ function Room(): JSX.Element {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [isOn, setIsOn] = useState<boolean>(false);
+  const [isDay, setIsDay] = useState<boolean>(true);
 
   const togglePlay: Function = () => {
     const audio = audioRef.current;
@@ -47,6 +52,16 @@ function Room(): JSX.Element {
 
   const toggleOn: Function = () => {
     setIsOn(!isOn);
+  }
+
+  const toggleDay: Function = () => {
+    setIsDay(!isDay);
+   
+    if(!isDay) {
+      setIsOn(false)
+    } else {
+      setIsOn(true);
+    }
   }
 
   useEffect(() => {
@@ -90,52 +105,76 @@ function Room(): JSX.Element {
   return (
     <>
         {(isLandscape && !isMobile)? (
-            <div className='background' >
-              <img src={Shelf} className='shelf'/>
-              <div className='light-switch'>
+            <div className={isDay ? 'background' : 'background-night'}>
+              <img src={Shelf} className={isDay? 'shelf' : 'shelf night'}/>
+              <div className={'light-switch-cont'}>
                 <LightSwitch
                   func={toggleOn}
+                  isDay={isDay}
                   state={isOn}
                 />
               </div>
               <div className='string-light-cont'>
                 <Light
                   isOn={isOn}
+                  isDay={isDay}
                 />
               </div>
-              <img src={Window} className='window'/>
+              <div className={isDay ? 'pictures-cont' : 'pictures-cont night'}>
+                <Pictures/>
+              </div>
+              <div className={'resume-cont'}>
+                <Resume
+                  isDay={isDay}
+                />
+              </div>
+              <div className={'wallclock-cont'}>
+                <Wallclock 
+                  func={toggleDay}
+                  isDay={isDay}
+                />
+              </div>
+              <div className='note-cont'>
+                <img src={Note} alt='note' className={isDay ? 'note' : 'note night'}/>
+              </div>
+              <div className='window-cont'>
+                <img src={Window} className={isDay ? 'window' : 'window night-2'}/>
+              </div>
               <div className='table-cont'>
                 <div className='laptop-cont'>
-                <Laptop/>
+                <Laptop
+                  isDay={isDay}
+                />
                 </div>
                 <div className='cassette-cont'>
                 <Cassette 
                     func={togglePlay}
                     isPlaying={isPlaying}
+                    isDay={isDay}
                 />
                 </div>
                 <div className='cup-cont'>
-                  <Cup/>
+                  <Cup isDay={isDay}/>
                 </div>
-                <div className='pencilcase-cont'>
+                <div className={isDay ? 'pencilcase-cont' : 'pencilcase-cont night'}>
                     <img src={PencilCase} className='pencilcase'/>
                 </div>
-                <div className='vase-cont'>
+                <div className={isDay ? 'vase-cont' : 'vase-cont night'}>
                     <img src={Vase} className='vase'/>
                 </div>
                 <div className='letters-cont'>
-                    <Letters/>
+                    <Letters isDay={isDay}/>
                 </div>
                 <div className='time-cont'>
-                  <Clock/>
+                  <Clock isDay={isDay}/>
                 </div>
                 <div className='lamp-cont'>
-                  <Lamp/>
+                  <Lamp isDay={isDay}/>
                 </div>
               
 
                 <div className='table-wrapper'>
-                  <div className='table-object'>
+                  <div className={isDay ? 'table-object' : 'table-object table-night'}>
                   </div>
                 </div>
                   <audio ref={audioRef} src={morningLofiMusic} loop/>
