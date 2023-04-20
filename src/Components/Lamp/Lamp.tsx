@@ -20,6 +20,8 @@ function Lamp({isDay} : Lamprops) {
   useEffect(() => {
     if(!isDay) {
       setOn(true)
+    } else {
+      setOn(false)
     }
   }, [isDay])
 
