@@ -152,7 +152,7 @@ body {
 }
 
 .table-object {
-  margin-top: -4vh;
+  margin-top: -1vh;
   border-bottom: 21vh solid #7C5B54;
 	border-left: 250px solid transparent;
 	border-right: 250px solid transparent;
@@ -190,6 +190,15 @@ body {
   position: relative;
   margin-top: 100px;
   margin-left: -1200px;
+}
+
+.plant {
+  width: 145px;
+  position: fixed;
+  top: -5%;
+  right: 50%;
+  margin-right: -350px;
+  z-index: 30;
 }
 
 .note {

@@ -1,7 +1,7 @@
 .time {
   width: 90px;
   position: relative;
-  margin-top: -28vh;
+  margin-top: -31vh;
   left: 330%;
   z-index: 5;
   text-align: center;
@@ -12,11 +12,13 @@
   max-height: 80px;
   border-radius: 10px;
   background-color: #E0B9A5;
+  cursor: pointer;
 }
 
 .time-text {
   margin-left: -5%;
   color:#305944;
+  cursor: pointer;
 }
 
 .clock-night {

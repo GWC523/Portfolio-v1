@@ -24,7 +24,7 @@ import LightSwitch from '../Components/Light Switch/LightSwitch';
 import Pictures from '../Components/Pictures/Pictures';
 import Resume from '../Components/Resume/Resume';
 import Note from '../Assets/Images/Room/room_note.svg';
-import Wallclock from '../Components/WallClock/Wallclock';
+import Plant from '../Assets/Images/Room/room_plant.svg';
 
 
 
@@ -106,7 +106,8 @@ function Room(): JSX.Element {
     <>
         {(isLandscape && !isMobile)? (
             <div className={isDay ? 'background' : 'background-night'}>
-              <img src={Shelf} className={isDay? 'shelf' : 'shelf night'}/>
+              <img src={Shelf} className={isDay ? 'shelf' : 'shelf night'}/>
+              <img src={Plant} className={isDay ? 'plant' : 'plant night'}/>
               <div className={'light-switch-cont'}>
                 <LightSwitch
                   func={toggleOn}
@@ -125,12 +126,6 @@ function Room(): JSX.Element {
               </div>
               <div className={'resume-cont'}>
                 <Resume
-                  isDay={isDay}
-                />
-              </div>
-              <div className={'wallclock-cont'}>
-                <Wallclock 
-                  func={toggleDay}
                   isDay={isDay}
                 />
               </div>
@@ -166,7 +161,7 @@ function Room(): JSX.Element {
                     <Letters isDay={isDay}/>
                 </div>
                 <div className='time-cont'>
-                  <Clock isDay={isDay}/>
+                  <Clock func={toggleDay} isDay={isDay}/>
                 </div>
                 <div className='lamp-cont'>
                   <Lamp isDay={isDay}/>
