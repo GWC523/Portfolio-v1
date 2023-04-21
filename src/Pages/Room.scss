@@ -20,17 +20,6 @@ body {
     height: 100%;
 }
 
-.laptop-cont {
-    position: relative;
-    top: 75%;
-    left: 12%;
-}
-
-.laptop-object {
-    width: 35%;
-    transform: translate(-50%, -50%);
-}
-
 .portfolio-screen {
     background-color: #FDE0A6;
     width: 23%;
@@ -96,13 +85,11 @@ body {
   margin-top: 0%;
 }
 
-.table-cont {
-  position: fixed;
-  bottom: 0;
-	width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
+// .table-cont {
+//   position: relative;
+//   bottom: 83%;
+// 	width: 100%;
+// }
 
 .cup-cont {
 	width: 130px;
@@ -134,33 +121,31 @@ body {
   margin-left: auto;
 }
 
-.resume-cont, .note-cont, .wallclock-cont, .pictures-cont, .window-cont, .light-switch-cont {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.table-wrapper {
-  width: 100%;
-  max-width: 1550px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.shelf-wrapper {
+.resume-cont, 
+.note-cont, 
+.wallclock-cont, 
+.pictures-cont, 
+.window-cont, 
+.light-switch-cont,
+.table-wrapper,
+.shelf-wrapper,
+.laptop-cont
+ {
   margin-right: auto;
   margin-left: auto;
 }
 
 .table-object {
-  margin-top: -1vh;
-  border-bottom: 21vh solid #7C5B54;
+  margin-top: -20px;
+  max-width: 1900px;
+  border-bottom: 300px solid #7C5B54;
 	border-left: 250px solid transparent;
 	border-right: 250px solid transparent;
   z-index: -5;
 }
 
 .table-night {
-  border-bottom: 21vh solid #392b35;
+  border-bottom: 300px solid #412f2c;
 }
 
 .pencilcase {
@@ -181,7 +166,7 @@ body {
 .window {
   width:600px;
   position: relative;
-  margin-top: -440px;
+  margin-top: -540px;
   margin-left: 0px;
 }
 
@@ -203,11 +188,9 @@ body {
 
 .note {
   width: 80px;
-  position: fixed;
-  top: 63%;
-  right: 50%;
-
-  margin-right: -400px;
+  position: relative;
+  margin-top: -15px;
+  margin-left: 720px;
   z-index: 20;
 }
 

@@ -51,11 +51,13 @@ $codred: #ac5e47;
 
 // MISC
 .wrap{
+  position: relative;
+  margin-top: -440px;
+  margin-left: 0px;
   width: 100%;
-  margin-top: 50vh;
-  margin-left: -13vw;
   justify-content: center;
   align-items: center;
+  z-index: 30;
 }
 .comp{
     width: 100%;

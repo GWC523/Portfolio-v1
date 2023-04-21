@@ -1,8 +1,7 @@
 .cube-switch {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-left: -380px;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 1100px;
   width: 50px;
   height: 50px;
   display: block;
@@ -19,10 +18,10 @@
   
   /* Prevents clicks on the back */
   cursor: default;    
-  pointer-events: none;
+
 
   .switch {
-    position:absolute;
+    position:relative;
     top: 50%;
     left: 50%;
     width: 30px;

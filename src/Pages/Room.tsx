@@ -135,12 +135,15 @@ function Room(): JSX.Element {
               <div className='window-cont'>
                 <img src={Window} className={isDay ? 'window' : 'window night-2'}/>
               </div>
-              <div className='table-cont'>
-                <div className='laptop-cont'>
+              <div className='table-wrapper'>
+                  <div className={isDay ? 'table-object' : 'table-object table-night'}></div>
+              </div>
+              <div className='laptop-cont'>
                 <Laptop
                   isDay={isDay}
                 />
-                </div>
+              </div>
+              <div className='table-cont'>
                 <div className='cassette-cont'>
                 <Cassette 
                     func={togglePlay}
@@ -167,11 +170,6 @@ function Room(): JSX.Element {
                   <Lamp isDay={isDay}/>
                 </div>
               
-
-                <div className='table-wrapper'>
-                  <div className={isDay ? 'table-object' : 'table-object table-night'}>
-                  </div>
-                </div>
                   <audio ref={audioRef} src={morningLofiMusic} loop/>
               </div>
              </div>

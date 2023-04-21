@@ -30,7 +30,8 @@ function Lamp({isDay} : Lamprops) {
   return (
     <>
       <input id='light' type='checkbox' checked={isOn}/>
-      <label className={isDay ? isOn ? 'light' : 'light off': isOn ? 'light night-switch' : 'light night-switch off'} htmlFor='light' onClick={() => toggleLamp()}></label>
+      <label className={isDay ? 'light' : 'light night-switch'} htmlFor='light' onClick={() => toggleLamp()}></label>
+      <div className={isOn ? "light-bulb" : "light-bulb off"}></div>
       <div className={isDay ? "lamp-base" : "lamp-base night"}></div>
       <div className={isDay ? "tube" : "tube night"}></div>
       <div className={isDay ? "lamp-shade" : "lamp-shade night"}></div>
