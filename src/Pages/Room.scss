@@ -222,5 +222,58 @@ body {
   }
 }
 
+/** MOBILE **/
+.background-mobile {
+  background: #4e54c8;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lamp-2-item {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.lamp-2-top {
+  background: #2d2d2d;
+  height: 100px;
+  width: 5px;
+  top: 0;
+}
+
+.lamp-2-middle {
+  background: #2d2d2d;
+  border-radius: 50px 50px 0 0;
+  height: 30px;
+  width: 30px;
+  top: 100px;
+}
+
+.lamp-2-bottom {
+  background: #2d2d2d;
+  border-radius: 100px 100px 0 0;
+  cursor: pointer;
+  height: 80px;
+  width: 100px;
+  top: 120px;
+}
+
+.lamp-2-light.open-2 {
+  border-bottom: 250px solid rgba(255, 240, 124, 0.136);
+  border-right: 150px solid transparent;
+  border-left: 150px solid transparent;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 0, 0)) drop-shadow(0 0 40px rgba(255, 255, 0, 0.633)) drop-shadow(0 0 60px rgba(255, 255, 0, 0.893)) drop-shadow(0 0 80px rgba(255, 255, 0, 0.895));
+  height: 250px;
+  width: 400px;
+  top: 200px;  
+  border-radius: 10px;
+}
 
 

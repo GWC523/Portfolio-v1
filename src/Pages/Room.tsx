@@ -25,6 +25,8 @@ import Pictures from '../Components/Pictures/Pictures';
 import Resume from '../Components/Resume/Resume';
 import Note from '../Assets/Images/Room/room_note.svg';
 import Plant from '../Assets/Images/Room/room_plant.svg';
+import LaptopMobile from '../Components/LaptopMobile/LaptopMobile';
+import ConsoleText from '../Components/ConsoleText/ConsoleText';
 
 
 
@@ -34,6 +36,7 @@ function Room(): JSX.Element {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [isOn, setIsOn] = useState<boolean>(false);
+  const [isMobileOn, setIsMobileOn] = useState<boolean>(true);
   const [isDay, setIsDay] = useState<boolean>(true);
 
   const togglePlay: Function = () => {
@@ -65,6 +68,7 @@ function Room(): JSX.Element {
   }
 
   useEffect(() => {
+    //Mobile text
     // Lock screen orientation to landscape mode
     const lockOrientation = () => {
       if (screen.orientation) {
@@ -101,6 +105,9 @@ function Room(): JSX.Element {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+  
+
+
 
   return (
     <>
@@ -175,7 +182,23 @@ function Room(): JSX.Element {
              </div>
         ) : (
             <>
-                Is Portrait
+              <div className='background-mobile'>
+                <div className="lamp-2 js-turnoff-btn" onClick={() => setIsMobileOn(!isMobileOn)}>
+                  <div className="lamp-2-item lamp-2-top"></div>
+                  <div className="lamp-2-item lamp-2-middle"></div>
+                  <div className="lamp-2-item lamp-2-bottom"></div>
+                  <div className={isMobileOn ? "lamp-2-item lamp-2-light open-2" : "lamp-2-item"}></div>
+                  <LaptopMobile/>
+                  <div className='tagline-cont'>
+                    <ConsoleText
+                      text="Hello, World!"
+                      speed={50}
+                      cursor={true}
+                      cursorChar="_"
+                    />
+                  </div>
+                </div>
+              </div>
             </>
         )}
     </>

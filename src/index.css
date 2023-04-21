@@ -3,3 +3,8 @@ body, html {
   margin: 0;
 }
 
+/**FONTS**/
+@font-face {
+  font-family: 'Digital-Dream' ;
+  src: url('../src/Assets/Fonts/digital-dream/DIGITALDREAM.ttf');
+}
