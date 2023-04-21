@@ -19,6 +19,7 @@ function LaptopMobile() {
 							</div>
 						</div>
 						<div className="inhead-2">
+                            <span className='site-name'>Hello, universe!</span>
 							<div className="mid-2">
 								<div className="item-2-2"></div>
 							</div>

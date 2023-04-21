@@ -3,6 +3,7 @@
   width: 100%;
   border: 0px solid #000;
   color: #DF8453;
+  z-index: 50;
 }
 
 .noot-1,
@@ -17,7 +18,7 @@
 
 .noot-1 {
   top: 320px;
-  left: 0;
+  left: 10%;
   animation-delay: 0.1s;
 }
 

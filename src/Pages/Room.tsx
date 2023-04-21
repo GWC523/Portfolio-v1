@@ -27,6 +27,7 @@ import Note from '../Assets/Images/Room/room_note.svg';
 import Plant from '../Assets/Images/Room/room_plant.svg';
 import LaptopMobile from '../Components/LaptopMobile/LaptopMobile';
 import ConsoleText from '../Components/ConsoleText/ConsoleText';
+import Logo from '../Assets/Images/logo.svg';
 
 
 
@@ -150,14 +151,14 @@ function Room(): JSX.Element {
                   isDay={isDay}
                 />
               </div>
-              <div className='table-cont'>
-                <div className='cassette-cont'>
+              <div className='cassette-cont'>
                 <Cassette 
                     func={togglePlay}
                     isPlaying={isPlaying}
                     isDay={isDay}
                 />
-                </div>
+              </div>
+              <div className='table-cont'>
                 <div className='cup-cont'>
                   <Cup isDay={isDay}/>
                 </div>
@@ -171,10 +172,10 @@ function Room(): JSX.Element {
                     <Letters isDay={isDay}/>
                 </div>
                 <div className='time-cont'>
-                  <Clock func={toggleDay} isDay={isDay}/>
+                    <Clock func={toggleDay} isDay={isDay}/>
                 </div>
                 <div className='lamp-cont'>
-                  <Lamp isDay={isDay}/>
+                    <Lamp isDay={isDay}/>
                 </div>
               
                   <audio ref={audioRef} src={morningLofiMusic} loop/>
@@ -183,6 +184,7 @@ function Room(): JSX.Element {
         ) : (
             <>
               <div className='background-mobile'>
+                <img src={Logo} alt='gwc.' className='logo'/>
                 <div className="lamp-2 js-turnoff-btn" onClick={() => setIsMobileOn(!isMobileOn)}>
                   <div className="lamp-2-item lamp-2-top"></div>
                   <div className="lamp-2-item lamp-2-middle"></div>
@@ -190,12 +192,39 @@ function Room(): JSX.Element {
                   <div className={isMobileOn ? "lamp-2-item lamp-2-light open-2" : "lamp-2-item"}></div>
                   <LaptopMobile/>
                   <div className='tagline-cont'>
+                    <h1 className='big-text'>
                     <ConsoleText
-                      text="Hello, World!"
-                      speed={50}
+                      text="Crafting code with a passion"
+                      speed={70}
                       cursor={true}
                       cursorChar="_"
+                      delay={1}
                     />
+                    </h1>
+                    <div className='tagline-cont-2'>
+                      <span className='delay-appear-1'>for </span>
+                      <span className='delay-appear-2'>
+                          <span className="title-word-mobile title-word-1-mobile">c</span>
+                          <span className="title-word-mobile title-word-2-mobile">r</span>
+                          <span className="title-word-mobile title-word-3-mobile">e</span>
+                          <span className="title-word-mobile title-word-4-mobile">a</span>
+                          <span className="title-word-mobile title-word-2-mobile">t</span>
+                          <span className="title-word-mobile title-word-3-mobile">i</span>
+                          <span className="title-word-mobile title-word-1-mobile">v</span>
+                          <span className="title-word-mobile title-word-4-mobile">i</span>
+                          <span className="title-word-mobile title-word-2-mobile">t</span>
+                          <span className="title-word-mobile title-word-4-mobile">y</span>
+                      </span>
+                      <span className='delay-appear-3'> and </span>
+                      <span className='reveal-text'>innovation.</span>
+                    </div>
+                      {/* <div className="social-menu">
+                          <ul>
+                              <li><a href="https://github.com/sanketbodke" target="blank"><i className="fab fa-github"></i></a></li>
+                              <li><a href="https://www.instagram.com/imsanketbodke/" target="blank"><i className="fab fa-instagram"></i></a></li>
+                              <li><a href="https://www.linkedin.com/in/sanket-bodake-995b5b205/" target="blank"><i className="fab fa-linkedin-in"></i></a></li>
+                          </ul>
+                      </div> */}
                   </div>
                 </div>
               </div>

@@ -31,6 +31,7 @@ $codred: #ac5e47;
 		padding: 9px;
 		border: solid 1px $grisclaro;
 		background-color: black;
+        box-shadow: -1px 0px 20px 5px rgba(0, 0, 0, 0.35);
     }
     .mid-2{
     	float: left;
@@ -74,7 +75,6 @@ $codred: #ac5e47;
 		}
 		.inhead-2{
 			padding: 2px;
-			height: 5px;
 			background-color: #ddd8cf;
 			.item-2{
 				width: 10px;
@@ -226,4 +226,9 @@ $codred: #ac5e47;
     display: block;
     margin: 0 auto;
     border-radius: 0px 0px 6px 6px;
-}  
+} 
+
+.site-name {
+    font-family: 'Moon-light';
+    font-size: 8px;
+}

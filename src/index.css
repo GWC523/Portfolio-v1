@@ -8,3 +8,33 @@ body, html {
   font-family: 'Digital-Dream' ;
   src: url('../src/Assets/Fonts/digital-dream/DIGITALDREAM.ttf');
 }
+
+@font-face {
+  font-family: 'Oswald' ;
+  src: url('../src/Assets/Fonts/Oswald/Oswald-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Moon-bold' ;
+  src: url('../src/Assets/Fonts/moontypeface-free-font/Moon\ Bold.otf');
+}
+
+@font-face {
+  font-family: 'Moon-light' ;
+  src: url('../src/Assets/Fonts/moontypeface-free-font/Moon\ Light.otf');
+}
+
+@font-face {
+  font-family: 'Prime-regular' ;
+  src: url('../src/Assets/Fonts/Prime/Commercial/OTF/Prime-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Prime-light' ;
+  src: url('../src/Assets/Fonts/Prime/Commercial/OTF/Prime-Light.otf');
+}
+
+@font-face {
+  font-family: 'Uni-heavy' ;
+  src: url('../src/Assets/Fonts/UniSans/Commercial/OTF/UniSansDemo-HeavyCAPS.otf');
+}

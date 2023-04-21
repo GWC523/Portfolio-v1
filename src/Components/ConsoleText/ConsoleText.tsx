@@ -5,6 +5,7 @@ type ConsoleTextProps = {
   speed?: number;
   cursor?: boolean;
   cursorChar?: string;
+  delay?:number;
 };
 
 const ConsoleText: React.FC<ConsoleTextProps> = ({
@@ -12,6 +13,7 @@ const ConsoleText: React.FC<ConsoleTextProps> = ({
   speed = 10,
   cursor = true,
   cursorChar = "_",
+  delay = 0
 }) => {
   const [displayText, setDisplayText] = useState("");
   const [index, setIndex] = useState(0);
