@@ -7,10 +7,11 @@ import LettersImg from "../../Assets/Images/Room/room_letters.svg";
 import './Letters.scss';
 
 interface LettersProps {
-  isDay: Boolean
+  isDay: Boolean,
+  setShowModal: Function
 }
 
-function Letters({isDay} : LettersProps) {
+function Letters({isDay, setShowModal} : LettersProps) {
   const [isHovering, setIsHovering] = useState(false);
 
   const handleMouseOver = () => {
@@ -30,6 +31,7 @@ function Letters({isDay} : LettersProps) {
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
             title="Contact Me"
+            onClick={() => setShowModal(true)}
         />
         {isHovering && (
         <div className='sparkle-wrap'>

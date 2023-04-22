@@ -1,15 +1,15 @@
 import React, {useState, useEffect, useRef} from 'react';
 import Laptop from '../Components/Laptop/Laptop';
 
-/* eslint-disable no-restricted-globals */
-/* Assets */
+/* Assets (Audio and Fonts)*/
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import morningLofiMusic from "../Assets/Audio/Morning-Lofi-Music.mp3";
 
 
 /* CSS */
 import "./Room.scss"
 
-/* Images */
+/* Components and Images */
 import Cassette from '../Components/Cassette/Cassette';
 import Cup from '../Components/Cup/Cup';
 import PencilCase from '../Assets/Images/Room/room_pencilcase.svg';
@@ -28,19 +28,25 @@ import Plant from '../Assets/Images/Room/room_plant.svg';
 import LaptopMobile from '../Components/LaptopMobile/LaptopMobile';
 import ConsoleText from '../Components/ConsoleText/ConsoleText';
 import Logo from '../Assets/Images/logo.svg';
+import Modal from '../Components/Modal/Modal';
+import RoomTitle from '../Assets/Images/Room/room_title.svg';
+import RoomTagline from '../Assets/Images/Room/room_tagline.svg';
 
 
 
 function Room(): JSX.Element {
   const [isLandscape, setIsLandscape] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean>(false);
-  const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [isOn, setIsOn] = useState<boolean>(false);
   const [isMobileOn, setIsMobileOn] = useState<boolean>(true);
   const [isDay, setIsDay] = useState<boolean>(true);
+  const [showModal, setShowModal] = useState<boolean>(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const copyRef = useRef<HTMLInputElement>(null);
 
   const togglePlay: Function = () => {
+    //Lofi Music
     const audio = audioRef.current;
 
     if (audio && isPlaying) {
@@ -55,6 +61,7 @@ function Room(): JSX.Element {
   }
 
   const toggleOn: Function = () => {
+    //For Lights
     setIsOn(!isOn);
   }
 
@@ -68,22 +75,30 @@ function Room(): JSX.Element {
     }
   }
 
-  useEffect(() => {
-    //Mobile text
-    // Lock screen orientation to landscape mode
-    const lockOrientation = () => {
-      if (screen.orientation) {
-        screen.orientation.lock('landscape');
-      }
-    };
-    lockOrientation();
-    // Unlock screen orientation on component unmount
-    return () => {
-      if (screen.orientation) {
-        screen.orientation.unlock();
-      }
-    };
-  }, []);
+  const handleCopyToClipboard = (str: any) => {
+    if(copyRef.current) {
+      copyRef.current.select();
+      navigator.clipboard.writeText(str)
+    }
+  }
+
+  const copyToClipboardInput = () => {
+    return (
+      <div className='copy-modal-container'>
+      <div className='copy-text'>
+        <input type='text' className='copy-text-input' ref={copyRef} value='gwchiu@up.edu.ph' />
+        <button onClick={() => handleCopyToClipboard('gwchiu@up.edu.ph')}>
+          <FontAwesomeIcon
+            icon={'clone'}
+            title={'copy to clipboard'}
+            aria-hidden='true'
+            className='copy-icon'
+          />
+        </button>
+      </div>
+      </div>
+    )
+  }
 
   useEffect(() => {
     const handleResize = () => {
@@ -96,7 +111,7 @@ function Room(): JSX.Element {
       setIsMobile(window.innerWidth < 980);
     };
 
-    handleResize(); // Call it initially
+    handleResize(); 
     handleMobile();
 
     window.addEventListener('resize', handleResize);
@@ -106,8 +121,6 @@ function Room(): JSX.Element {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-  
-
 
 
   return (
@@ -131,6 +144,12 @@ function Room(): JSX.Element {
               </div>
               <div className={isDay ? 'pictures-cont' : 'pictures-cont night'}>
                 <Pictures/>
+              </div>
+              <div className='room-title-cont'>
+                <img src={RoomTitle} className={isDay ? 'room-title' : 'room-title night'}/>
+              </div>
+              <div className='room-tagline-cont'>
+                <img src={RoomTagline} className={isDay ? 'room-tagline' : 'room-tagline night'}/>
               </div>
               <div className={'resume-cont'}>
                 <Resume
@@ -158,6 +177,13 @@ function Room(): JSX.Element {
                     isDay={isDay}
                 />
               </div>
+                <Modal
+                  title="Contact Me"
+                  subTitle="via email"
+                  showModal={showModal}
+                  setShowModal={setShowModal}
+                  children={copyToClipboardInput()}
+                />
               <div className='table-cont'>
                 <div className='cup-cont'>
                   <Cup isDay={isDay}/>
@@ -169,7 +195,7 @@ function Room(): JSX.Element {
                     <img src={Vase} className='vase'/>
                 </div>
                 <div className='letters-cont'>
-                    <Letters isDay={isDay}/>
+                    <Letters isDay={isDay} setShowModal={setShowModal}/>
                 </div>
                 <div className='time-cont'>
                     <Clock func={toggleDay} isDay={isDay}/>
@@ -178,7 +204,7 @@ function Room(): JSX.Element {
                     <Lamp isDay={isDay}/>
                 </div>
               
-                  <audio ref={audioRef} src={morningLofiMusic} loop/>
+                <audio ref={audioRef} src={morningLofiMusic} loop/>
               </div>
              </div>
         ) : (
@@ -218,13 +244,22 @@ function Room(): JSX.Element {
                       <span className='delay-appear-3'> and </span>
                       <span className='reveal-text'>innovation.</span>
                     </div>
-                      {/* <div className="social-menu">
-                          <ul>
-                              <li><a href="https://github.com/sanketbodke" target="blank"><i className="fab fa-github"></i></a></li>
-                              <li><a href="https://www.instagram.com/imsanketbodke/" target="blank"><i className="fab fa-instagram"></i></a></li>
-                              <li><a href="https://www.linkedin.com/in/sanket-bodake-995b5b205/" target="blank"><i className="fab fa-linkedin-in"></i></a></li>
-                          </ul>
-                      </div> */}
+                    <div className='tabs-cont'>
+                        <ul className='tabs'>
+                          <li>
+                            <button type='button' className='tab-btn'>INDEX</button>
+                          </li>
+                          <li>
+                            <button type='button' className='tab-btn inactive'>ABOUT ME</button>
+                          </li>
+                          <li>
+                            <button type='button' className='tab-btn inactive'>PROJECTS</button>
+                          </li>
+                          <li>
+                            <button type='button' className='tab-btn inactive'>CONTACT ME</button>
+                          </li>
+                        </ul>
+                    </div>
                   </div>
                 </div>
               </div>

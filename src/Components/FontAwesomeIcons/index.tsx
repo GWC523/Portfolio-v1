@@ -39,6 +39,8 @@ import {
   faRedo,
   faDownload,
   faFolder,
+  faXmark,
+  faClone,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -81,5 +83,7 @@ library.add(
   faRedo,
   faDownload,
   faFolder,
-  faBars
+  faBars,
+  faXmark,
+  faClone
 );

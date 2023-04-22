@@ -71,9 +71,7 @@ function Laptop({isDay} : LaptopProps) {
                         </div>
                         </div>
                         <div className="inhead">
-                        <div 
-                        style={style}
-                        >
+                        <div>
                             Projects
                         </div>
                         <div className="mid">
