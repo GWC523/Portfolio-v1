@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-v1/static/css/main.f6430666.css",
-    "main.js": "/Portfolio-v1/static/js/main.1d1e00b5.js",
+    "main.css": "/Portfolio-v1/static/css/main.3586ae98.css",
+    "main.js": "/Portfolio-v1/static/js/main.122a35d6.js",
     "static/media/Morning-Lofi-Music.mp3": "/Portfolio-v1/static/media/Morning-Lofi-Music.3c783b909a338c5f5dc8.mp3",
     "static/media/room_pictures.svg": "/Portfolio-v1/static/media/room_pictures.1ad328404a414a0350da65680b9d9a04.svg",
     "static/media/room_letters.svg": "/Portfolio-v1/static/media/room_letters.cd503448d6f7a97036135d0ed0cb701a.svg",
@@ -27,11 +27,11 @@
     "static/media/room_cup.svg": "/Portfolio-v1/static/media/room_cup.cf50299c83eb4ebef600747559f0b423.svg",
     "static/media/logo.svg": "/Portfolio-v1/static/media/logo.814e6bdb8260ceac18490ea4c529fe79.svg",
     "index.html": "/Portfolio-v1/index.html",
-    "main.f6430666.css.map": "/Portfolio-v1/static/css/main.f6430666.css.map",
-    "main.1d1e00b5.js.map": "/Portfolio-v1/static/js/main.1d1e00b5.js.map"
+    "main.3586ae98.css.map": "/Portfolio-v1/static/css/main.3586ae98.css.map",
+    "main.122a35d6.js.map": "/Portfolio-v1/static/js/main.122a35d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6430666.css",
-    "static/js/main.1d1e00b5.js"
+    "static/css/main.3586ae98.css",
+    "static/js/main.122a35d6.js"
   ]
 }
