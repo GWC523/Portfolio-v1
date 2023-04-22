@@ -5,7 +5,7 @@ type ConsoleTextProps = {
   speed?: number;
   cursor?: boolean;
   cursorChar?: string;
-  delay?:number;
+  delay?: number;
 };
 
 const ConsoleText: React.FC<ConsoleTextProps> = ({
@@ -18,23 +18,25 @@ const ConsoleText: React.FC<ConsoleTextProps> = ({
   const [displayText, setDisplayText] = useState("");
   const [index, setIndex] = useState(0);
   const [showCursor, setShowCursor] = useState(cursor);
-  const intervalRef = useRef<NodeJS.Timeout>();
+  const animationRef = useRef<number>();
 
   useEffect(() => {
-    intervalRef.current = setInterval(() => {
+    const updateDisplayText = (timestamp: number) => {
       if (index < text.length) {
         setDisplayText((prevText) => prevText + text[index]);
         setIndex((prevIndex) => prevIndex + 1);
+        animationRef.current! = requestAnimationFrame(updateDisplayText);
       } else {
         setShowCursor((prevShowCursor) => !prevShowCursor);
-        clearInterval(intervalRef.current);
       }
-    }, speed);
+    };
+
+    animationRef.current = requestAnimationFrame(updateDisplayText);
 
     return () => {
-      clearInterval(intervalRef.current);
+      cancelAnimationFrame(animationRef.current!);
     };
-  }, [index, text, speed]);
+  }, [index, text]);
 
   return (
     <>

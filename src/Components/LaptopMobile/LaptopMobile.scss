@@ -11,7 +11,7 @@ $codred: #ac5e47;
 	// width: 100%;
 	// height: 100vh;
 	position: absolute;
-    margin-top: 300px;
+    margin-top: 200px;
     left: 0;
     right: 0;
 	display: flex;
@@ -23,8 +23,8 @@ $codred: #ac5e47;
     height: 194px;
     text-align: center;
     .monitor-2{
-		width: 225px;
-		height: 148px;
+		width: 210px;
+		height: 138px;
 		display: block;
 		margin: 0 auto;
 		border-radius: 10px 10px 0px 0px;
@@ -47,7 +47,7 @@ $codred: #ac5e47;
     .site-2{
     	overflow: hidden;
     	position: absolute;
-		width: 100px;
+		width: 90px;
 		height: 115px;
 	    bottom: 0;
 	    right: 0;
@@ -220,7 +220,7 @@ $codred: #ac5e47;
 }
 
 .base-2 {
-    width: 280px;
+    width: 260px;
     height: 12px;
     background: $grisclaro;
     display: block;
