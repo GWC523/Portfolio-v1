@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   HashRouter as Router,
   Routes,
@@ -7,49 +7,45 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import "./Components/FontAwesomeIcons";
+
+/** PAGES **/
 import Room from "./Pages/Room";
 
 
-/** PAGES **/
-
-
-interface IThemeContext {
-  theme: any;
-  method: any;
-}
-
-export const ThemeContext = React.createContext<IThemeContext>({
-  theme: null,
-  method: null,
-});
-
 function App() {
+  const [isPageReady, setIsPageReady] = useState<boolean>(false);
 
-  //Set light mode or dark mode
-  const [theme, setTheme] = useState("dark");
-  const [isChecked, setIsChecked] = useState(false);
+  useEffect(() => {
+    // callback function to call when event triggers
+    const onPageLoad = () => {
+      setIsPageReady(true);
+    };
 
-  const toggleTheme = () => {
-    setTheme((curr) => (curr === "light" ? "dark" : "light"));
-  };
-
-  React.useEffect(() => {
-    toggleTheme();
-  }, [isChecked]);
+    // Check if the page has already loaded
+    if (document.readyState === 'complete') {
+      onPageLoad();
+    } else {
+      window.addEventListener('load', onPageLoad, false);
+      // Remove the event listener when component unmounts
+      return () => window.removeEventListener('load', onPageLoad);
+    }
+  }, []);
 
   return (
-    <ThemeContext.Provider value={{ theme: theme, method: toggleTheme }}>
-      <div className="App" id={theme}>
-        <Router>
-          <Routes>
-            <Route
-              path="/"
-              element={<Room/>}
-            />
-          </Routes>
-        </Router>
+      <div className="App">
+        {isPageReady ? (
+          <Router>
+            <Routes>
+              <Route
+                path="/"
+                element={<Room/>}
+              />
+            </Routes>
+          </Router>
+        ) : (
+          <div>loading</div>
+        )}
       </div>
-    </ThemeContext.Provider>
   );
 }
 

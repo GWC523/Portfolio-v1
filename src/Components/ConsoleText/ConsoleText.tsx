@@ -19,24 +19,32 @@ const ConsoleText: React.FC<ConsoleTextProps> = ({
   const [index, setIndex] = useState(0);
   const [showCursor, setShowCursor] = useState(cursor);
   const animationRef = useRef<number>();
+  const animationStart = useRef<number | null>(null);
 
-  useEffect(() => {
+    useEffect(() => {
     const updateDisplayText = (timestamp: number) => {
-      if (index < text.length) {
-        setDisplayText((prevText) => prevText + text[index]);
-        setIndex((prevIndex) => prevIndex + 1);
-        animationRef.current! = requestAnimationFrame(updateDisplayText);
-      } else {
+        const elapsed = timestamp - animationStart.current!;
+        const indexToAdd = Math.floor(elapsed / speed);
+        if (indexToAdd > 0) {
+        const newIndex = Math.min(index + indexToAdd, text.length);
+        setDisplayText(text.slice(0, newIndex));
+        setIndex(newIndex);
+        }
+        if (index < text.length) {
+        animationRef.current = requestAnimationFrame(updateDisplayText);
+        } else {
         setShowCursor((prevShowCursor) => !prevShowCursor);
-      }
+        }
     };
 
+    animationStart.current = window.performance.now();
     animationRef.current = requestAnimationFrame(updateDisplayText);
 
     return () => {
-      cancelAnimationFrame(animationRef.current!);
+        cancelAnimationFrame(animationRef.current!);
     };
-  }, [index, text]);
+    }, [index, text, speed]);
+
 
   return (
     <>

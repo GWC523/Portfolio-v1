@@ -35,7 +35,6 @@ import RoomTagline from '../Assets/Images/Room/room_tagline.svg';
 
 
 function Room(): JSX.Element {
-  const [isLandscape, setIsLandscape] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [isOn, setIsOn] = useState<boolean>(false);
@@ -101,31 +100,25 @@ function Room(): JSX.Element {
   }
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsLandscape(window.innerWidth > window.innerHeight);
-    };
-
     console.log(window.innerWidth < 980)
 
     const handleMobile = () => {
       setIsMobile(window.innerWidth < 980);
     };
 
-    handleResize(); 
     handleMobile();
 
-    window.addEventListener('resize', handleResize);
     window.addEventListener('resize', handleMobile);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('resize', handleMobile);
     };
   }, []);
 
 
   return (
     <>
-        {(isLandscape && !isMobile)? (
+        {(!isMobile)? (
             <div className={isDay ? 'background' : 'background-night'}>
               <img src={Shelf} className={isDay ? 'shelf' : 'shelf night'}/>
               <img src={Plant} className={isDay ? 'plant' : 'plant night'}/>
@@ -242,7 +235,7 @@ function Room(): JSX.Element {
                           <span className="title-word-mobile title-word-4-mobile">y</span>
                       </span>
                       <span className='delay-appear-3'> and </span>
-                      <span className='reveal-text'>innovation.</span>
+                      <span className='delay-appear-4'>innovation.</span>
                     </div>
                     <div className='tabs-cont'>
                         <ul className='tabs'>
@@ -250,13 +243,13 @@ function Room(): JSX.Element {
                             <button type='button' className='tab-btn'>INDEX</button>
                           </li>
                           <li>
-                            <button type='button' className='tab-btn inactive'>ABOUT ME</button>
+                            <button type='button' className='tab-btn inactive'>ABOUT</button>
                           </li>
                           <li>
                             <button type='button' className='tab-btn inactive'>PROJECTS</button>
                           </li>
                           <li>
-                            <button type='button' className='tab-btn inactive'>CONTACT ME</button>
+                            <button type='button' className='tab-btn inactive'>CONTACT</button>
                           </li>
                         </ul>
                     </div>
