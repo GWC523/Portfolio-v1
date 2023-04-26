@@ -12,7 +12,7 @@ interface ResumeProps {
 
 function Resume({isDay} : ResumeProps) {
 
-  let resume_file = 'https://drive.google.com/file/d/1X5iD8fA-qi0iVKoy7V2HPdzsuVOb_AcB/view?usp=share_link';
+  let resume_file = 'https://drive.google.com/file/d/1XrwmnJedg5BfS8uU61B8-gdmQlBcxlDr/view?usp=share_link';
 
   return (
     <>

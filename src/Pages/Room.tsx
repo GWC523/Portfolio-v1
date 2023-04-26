@@ -35,6 +35,7 @@ import RoomTagline from '../Assets/Images/Room/room_tagline.svg';
 
 
 function Room(): JSX.Element {
+  const [isLandscape, setIsLandscape] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [isOn, setIsOn] = useState<boolean>(false);
@@ -99,26 +100,45 @@ function Room(): JSX.Element {
     )
   }
 
+
   useEffect(() => {
+    //Handle day or night mode
+    const hours = new Date().getHours()
+    const isDayTime = hours > 6 && hours < 18
+    console.log(hours)
+
+    if(isDayTime) {
+      setIsDay(true);
+    } else {
+      setIsDay(false);
+    }
+
+    //Handle Screen Size
+    const handleResize = () => {
+      setIsLandscape(window.innerWidth > window.innerHeight);
+    };
+
     console.log(window.innerWidth < 980)
 
     const handleMobile = () => {
       setIsMobile(window.innerWidth < 980);
     };
 
+    handleResize(); 
     handleMobile();
 
+    window.addEventListener('resize', handleResize);
     window.addEventListener('resize', handleMobile);
 
     return () => {
-      window.removeEventListener('resize', handleMobile);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
 
   return (
     <>
-        {(!isMobile)? (
+        {(isLandscape && !isMobile)? (
             <div className={isDay ? 'background' : 'background-night'}>
               <img src={Shelf} className={isDay ? 'shelf' : 'shelf night'}/>
               <img src={Plant} className={isDay ? 'plant' : 'plant night'}/>
@@ -209,7 +229,8 @@ function Room(): JSX.Element {
                   <div className="lamp-2-item lamp-2-middle"></div>
                   <div className="lamp-2-item lamp-2-bottom"></div>
                   <div className={isMobileOn ? "lamp-2-item lamp-2-light open-2" : "lamp-2-item"}></div>
-                  <LaptopMobile/>
+                </div>
+                                  <LaptopMobile/>
                   <div className='tagline-cont'>
                     <h1 className='big-text'>
                     <ConsoleText
@@ -246,7 +267,7 @@ function Room(): JSX.Element {
                             <button type='button' className='tab-btn inactive'>ABOUT</button>
                           </li>
                           <li>
-                            <button type='button' className='tab-btn inactive'>PROJECTS</button>
+                            <button type='button' className='tab-btn inactive'>WORKS</button>
                           </li>
                           <li>
                             <button type='button' className='tab-btn inactive'>CONTACT</button>
@@ -254,7 +275,6 @@ function Room(): JSX.Element {
                         </ul>
                     </div>
                   </div>
-                </div>
               </div>
             </>
         )}

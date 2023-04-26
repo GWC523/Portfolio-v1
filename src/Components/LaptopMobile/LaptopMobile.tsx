@@ -4,10 +4,12 @@ import React, {useState} from 'react';
 import './LaptopMobile.scss';
 
 function LaptopMobile() {
+  const [isClicked, setIsClicked] = useState(false);
+
   return (
     <>
     <div className="wrap-2">
-		<div className="comp-2">
+		<div className="comp-2" onClick={() => setIsClicked(!isClicked)}>
 			<div className="monitor-2">
 				<div className="mid-2">
 					<div className="site-2">
@@ -19,7 +21,7 @@ function LaptopMobile() {
 							</div>
 						</div>
 						<div className="inhead-2">
-                            <span className='site-name'>Hello, universe!</span>
+                            <span className='site-name'><div>{isClicked ? "Software Developer" : "Gwyneth Chiu"}</div></span>
 							<div className="mid-2">
 								<div className="item-2-2"></div>
 							</div>

@@ -38,3 +38,13 @@ body, html {
   font-family: 'Uni-heavy' ;
   src: url('../src/Assets/Fonts/UniSans/Commercial/OTF/UniSansDemo-HeavyCAPS.otf');
 }
+
+@font-face {
+  font-family: 'Open-sans' ;
+  src: url('../src/Assets/Fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
+}
+
+@font-face {
+  font-family: 'Finger-paint' ;
+  src: url('../src/Assets/Fonts/Finger_Paint/FingerPaint-Regular.ttf');
+}

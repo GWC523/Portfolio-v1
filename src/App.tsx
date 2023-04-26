@@ -10,6 +10,7 @@ import "./Components/FontAwesomeIcons";
 
 /** PAGES **/
 import Room from "./Pages/Room";
+import AboutMe from "./Pages/AboutMe";
 
 
 function App() {
@@ -39,6 +40,10 @@ function App() {
               <Route
                 path="/"
                 element={<Room/>}
+              />
+              <Route
+                path="/aboutMe"
+                element={<AboutMe/>}
               />
             </Routes>
           </Router>
