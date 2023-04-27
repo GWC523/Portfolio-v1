@@ -105,7 +105,6 @@ function Room(): JSX.Element {
     //Handle day or night mode
     const hours = new Date().getHours()
     const isDayTime = hours > 6 && hours < 18
-    console.log(hours)
 
     if(isDayTime) {
       setIsDay(true);
@@ -114,31 +113,23 @@ function Room(): JSX.Element {
     }
 
     //Handle Screen Size
-    const handleResize = () => {
-      setIsLandscape(window.innerWidth > window.innerHeight);
-    };
-
-    console.log(window.innerWidth < 980)
-
     const handleMobile = () => {
       setIsMobile(window.innerWidth < 980);
     };
 
-    handleResize(); 
     handleMobile();
 
-    window.addEventListener('resize', handleResize);
     window.addEventListener('resize', handleMobile);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('resize', handleMobile);
     };
   }, []);
 
 
   return (
     <>
-        {(isLandscape && !isMobile)? (
+        {(!isMobile)? (
             <div className={isDay ? 'background' : 'background-night'}>
               <img src={Shelf} className={isDay ? 'shelf' : 'shelf night'}/>
               <img src={Plant} className={isDay ? 'plant' : 'plant night'}/>

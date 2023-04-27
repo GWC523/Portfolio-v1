@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { useNavigate } from "react-router-dom";
 
 /* Images */
 import Sun from '../../Assets/Images/Navbar/sunny.png';
@@ -13,6 +14,7 @@ interface NavbarProps {
 
 function Navbar({path} : NavbarProps) {
   const [isExpanded, setIsExpanded] = useState(false);
+  let navigate = useNavigate();
 
   return (
     <nav className="navigation">
@@ -32,7 +34,7 @@ function Navbar({path} : NavbarProps) {
       <div
         className={isExpanded ? "navigation-menu expanded" : "navigation-menu"}>
         <ul>
-          <li>
+          <li onClick={() => navigate("/")}>
             <a>{isExpanded ? 
                     "Home" :    
                     <FontAwesomeIcon

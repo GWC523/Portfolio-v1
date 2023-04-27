@@ -1,0 +1,100 @@
+.page {
+    margin: 150px 0px 0px 5%;
+    font-family: 'Open-sans';
+}
+
+.background-2 {
+    background-color: #F6F6F6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.name {
+    text-align: left;
+    font-family: 'Finger-paint';
+    font-size: 72px;
+    color: #7C5B54;
+}
+
+.introduction {
+    font-size: 18px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.intro-option {
+    display: flex;
+    text-align: left;
+    padding: 0;
+}
+
+.prof-button {
+    margin-right: 20px;
+}
+
+.prof-button, .casual-button {
+    border: none;
+    background-color: transparent;
+}
+
+.chosen {
+    color: #7C5B54;
+    border-bottom: 3px solid #7C5B54;
+}
+
+.eyes-follow {
+    margin: 100px 0px 0px 50px;
+}
+
+.eyes {
+    display: flex;
+}
+
+.eye {
+    background-color: #FFFFFF;
+    width: 200px ;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.pupil {
+    background-color: #7C5B54;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: relative;
+    top: 10%;
+    left: 0%;
+}
+
+.mouth {
+    background-color: transparent;
+    width: 100px;
+    height: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 150px;
+    border-bottom: 20px solid #222;
+    // border-left: 10px solid #222;
+    // border-right: 10px solid #222;
+    -moz-border-radius: 0 0 120px 120px / 0 0 90px 90px;
+	-webkit-border-radius: 0 0 120px 120px 0 0 90px 90px;
+	border-radius: 0 0px 150px 150px / 0 0 100px 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .page {
+        margin: 100px 0px 0px 7%;
+    }
+    .name {
+        font-size: 45px;
+    }
+    .introduction {
+        margin-top: 20px;
+        font-size: 14px;
+        width: 320px;
+    }
+}
