@@ -4,6 +4,7 @@ import useMightyMouse from "react-hook-mighty-mouse";
 /* CSS */
 import './AboutMe.scss';
 import Navbar from '../Components/Navbar/Navbar';
+import ContactList from '../Components/ContactList/ContactList';
 
 function AboutMe() {
   const [introStyle, setIntroStyle] = useState('prof');
@@ -28,6 +29,7 @@ function AboutMe() {
   return (
     <div className='background-2'>
     <Navbar path={'/aboutMe'}/>
+    <ContactList/>
     <div className='page'>
       <div className='row'>
       <div className='col-sm-6'>
@@ -52,12 +54,14 @@ function AboutMe() {
         <div className="eyes-follow">
           <div className="eyes">
             <div id="left-eye">
+              <div className='left-eyebrow'></div>
               <div className="eye" style={{ transform: rotateLeftEye }}>
               <div className="pupil" />
               </div>
             </div>
             <div className='mouth'></div>
             <div id="right-eye">
+              <div className='right-eyebrow'></div>
               <div className="eye" style={{ transform: rotateRightEye }}>
               <div className="pupil" />
               </div>

@@ -1,4 +1,5 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
+
 import {
   faTrashCan,
   faUpload,
@@ -88,5 +89,5 @@ library.add(
   faXmark,
   faClone,
   faArrowLeftLong,
-
+  faEnvelope,
 );
