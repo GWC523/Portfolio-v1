@@ -10,6 +10,7 @@ import { faAws, faBootstrap, faGitAlt, faJs, faNodeJs, faPhp, faPython, faReact,
 
 function AboutMe() {
   const [introStyle, setIntroStyle] = useState('prof');
+  const [companyOption, setCompanyOption] = useState('myt');
 
    const {
     selectedElement: {
@@ -217,16 +218,92 @@ function AboutMe() {
      <div className='exp-cont row'>
           <div className='col-sm-3'>
             <ul className='company-list'>
-              <li className='active'>
+              <li 
+                className={companyOption === 'myt' ? 'active' : ''}
+                onClick={() => setCompanyOption('myt')}
+              >
                 <span className='company-option'>MYT SoftDev Solutions Inc.</span>
               </li>
-              <li>
+              <li 
+                className={companyOption === 'shopme' ? 'active' : ''}
+                onClick={() => setCompanyOption('shopme')}
+              >
                 <span className='company-option'>ShopMe</span>
               </li>
             </ul>
           </div>
           <div className='col-sm-7'>
-            <p>Junior Software Developer </p>
+            {companyOption === 'myt' && (
+              <>
+              <div className='exp-content'>
+                <p className='role-header'>Junior Software Developer </p>
+                <p className='date-subheader'>Oct 2021 – Dec 2022</p>
+                <ul className='experience-list'>
+                  <li>Led a project in developing an Enterprise Resource Planning System Software
+                  for a diagnostics center to help them manage daily activities such as managing
+                  supplies, finances, and services. Software is developed with ReactJs, PHP, and
+                  MySQL.
+                  </li>
+                  <li>
+                    Led in the development of an Enterprise Resource Planning System Software for
+                    a cargo airline in the Philippines. 
+                  </li>
+                  <li>
+                    Built a PHP-based group chat system from scratch for a virtual event platform.
+                  </li>
+                  <li>
+                    Built a lucky draw app using PHP, HTML/CSS, and MySQL that has been used by
+                    various virtual events.
+                  </li>
+                </ul>
+              </div>
+              <div className='exp-content'>
+                <p className='role-header'>Junior Software Developer Intern</p>
+                <p className='date-subheader'>July 2021 – Oct 2022</p>
+                <ul className='experience-list'>
+                  <li>
+                    Reworked and improved the front-end for a booking site of a company.
+                  </li>
+                  <li>
+                    Built a billing list system for a construction supplier company.
+                  </li>
+                  <li>
+                    Collaborated and assisted in developing virtual event websites with a total of
+                    four projects.
+                  </li>
+                  <li>
+                    Collaborated with a senior software developer in developing a virtual event
+                    website for an anniversary event of a company.
+                  </li>
+                  <li>
+                    Developed a public message board system for the virtual event platform.
+                  </li>
+                </ul>
+              </div>
+              </>
+            )}
+            {companyOption === 'shopme' && (
+              <>
+              <div className='exp-content'>
+                <p className='role-header'>Junior Software Developer </p>
+                <p className='date-subheader'>June 2021- August 2022</p>
+                <ul className='experience-list'>
+                  <li>
+                    Redesigned, developed, and integrated the product info page and cart to
+                    update the ShopMe app.
+                  </li>
+                  <li>
+                    Designed the wish list feature and assisted in the development and integration
+                    of the new feature to the app.
+                  </li>
+                  <li>
+                    Added the email functionality to send payment information after a customer
+                    places an order.
+                  </li>
+                </ul>
+              </div>
+              </>
+            )}
           </div>
      </div>
     </div>

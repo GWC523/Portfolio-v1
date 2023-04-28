@@ -5,7 +5,6 @@
 
 .page-2 {
     font-family: 'Open-sans';
-    height: 100vh;
     width: 100vw;
     background-color: #F7ECE3;
 }
@@ -239,12 +238,38 @@
     text-align: left;
     padding: 4%;
     border-left: 1px solid #7C5B54;
+    cursor: pointer;
 }
 
 .active {
     background-color: #9d786c61;
     border-left: 3px solid #7C5B54 !important;
 }
+
+.exp-content {
+    margin: 35px 0 100px 70px;
+}
+
+.role-header {
+    text-align: left;
+    color: #7C5B54;
+    font-weight: bold;
+    line-height: 1px;
+}
+
+.date-subheader {
+    text-align: left;
+    color: #7C5B54;
+    font-size: 12px;
+    line-height: 0;
+}
+
+.experience-list li {
+    list-style: circle !important;
+    text-align: left;
+    font-size: 14px;
+}
+
 
 
 
