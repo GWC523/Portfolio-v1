@@ -26,7 +26,6 @@ function ContactList() {
                 title={'github'}
                 aria-hidden='true'
                 className='github-icon'
-                onClick = {() => { window.open(github_link, '_blank', 'noreferrer') }}
                 />  
             </li>
             <li>
