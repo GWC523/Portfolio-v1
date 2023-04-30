@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
 import useMightyMouse from "react-hook-mighty-mouse";
 
+/* Images */
+import Vizathon from '../Assets/Images/AboutMe/vizathon.png';
+
 /* CSS */
 import './AboutMe.scss';
 import Navbar from '../Components/Navbar/Navbar';
@@ -11,8 +14,9 @@ import { faAws, faBootstrap, faGitAlt, faJs, faNodeJs, faPhp, faPython, faReact,
 function AboutMe() {
   const [introStyle, setIntroStyle] = useState('prof');
   const [companyOption, setCompanyOption] = useState('myt');
+  const [isHover, setIsHover] = useState(false);
 
-   const {
+  const {
     selectedElement: {
       position: { angle: angleLeftEye },
     },
@@ -40,7 +44,7 @@ function AboutMe() {
         <h1 className='name'>Gwyneth Chiu</h1>
         <p className='introduction prof'>
           {introStyle === 'prof' ?
-          "Are you in need of a junior software developer who can think outside the box and approach problems from multiple angles? Look to me (literally!)→👩🏻‍💻! With a passion in design, a love for learning, and an interest in AI, I bring a well-rounded perspective and a dedication to innovation to every project. Let's work together to create forward-thinking solutions that make a difference in the world."
+          (<>Are you in need of a junior software developer who can think outside the box and approach problems from multiple angles? Look to me →<span className="avatar" onMouseOver={() => setIsHover(true)} onMouseOut={() => setIsHover(false)}>👩🏻‍💻</span>! With a passion in design, a love for learning, and an interest in AI, I bring a well-rounded perspective and a dedication to innovation to every project. Let's work together to create forward-thinking solutions that make a difference in the world.</>)
           :
           'A 4th year computer science student at the University of the Philippines in Philippines (of course) looking for a junior software developer job 🇵🇭  Ever since I was a kid I was interested in web development. I remember making a Wordpress website and being proud of that easy creation. However, I did not cross my mind to learn programming and web development until I got into college. As a noob, I am trying my best to learn as much as I can! I am currently interested in web development with a specialty in ReactJS and Django. By the way, I love lo-fi and coffee!'
           }
@@ -63,7 +67,7 @@ function AboutMe() {
               <div className="pupil" />
               </div>
             </div>
-            <div className='mouth'></div>
+            <div className={isHover ? 'mouth happier' : 'mouth'}></div>
             <div id="right-eye">
               <div className='right-eyebrow'></div>
               <div className="eye" style={{ transform: rotateRightEye }}>
@@ -308,7 +312,17 @@ function AboutMe() {
      </div>
     </div>
     <div className='page-3'>
-     heree
+     <h2 className='awards-header'>Activities & Awards</h2>
+     <div className='award-cards-cont row'>
+         <div className='col-sm-4'>
+            <div className='award-card'>
+              <img src={Vizathon} className='image'/>
+              <div className='content'>
+                <p>Vizathon 2021</p>
+              </div>
+            </div>
+         </div>
+     </div>
     </div>
     </div>
     </>
