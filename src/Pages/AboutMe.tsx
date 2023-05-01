@@ -318,7 +318,12 @@ function AboutMe() {
             <div className='award-card'>
               <img src={Vizathon} className='image'/>
               <div className='content'>
-                <p>Vizathon 2021</p>
+                <p className='header'>Vizathon 2021</p>
+                <p className='subheader'>Innovation Award</p>
+                <p className='body'>
+                  The People vs Covid-19 is a web app that shows interactive data visualization of COVID-19 cases around the world. It was awarded the innovation award against 60 projects.
+                </p>
+                <p className='see-more'>See More</p>
               </div>
             </div>
          </div>
