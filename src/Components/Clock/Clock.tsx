@@ -28,7 +28,7 @@ function Clock({func, isDay} : ClockProps) {
   return (
     <>
         <div className={isDay ? 'time' : 'time clock-night'} onClick={() => func()}>
-            <span className={isDay ? 'time-text' : 'time-text time-light'}>{date.toLocaleTimeString().replace("AM","").replace("PM","")}</span>
+            <span className={isDay ? 'time-text' : 'time-text time-light'}>{date.toLocaleTimeString().replace('AM','').replace('PM','')}</span>
         </div>
     </>
   )

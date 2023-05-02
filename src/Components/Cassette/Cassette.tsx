@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 /* Image */
-import CassetteImg from "../../Assets/Images/Room/room_cassette.svg";
+import CassetteImg from '../../Assets/Images/Room/room_cassette.svg';
 
 /* CSS */
-import "./Cassette.scss";
+import './Cassette.scss';
 
 
 interface CassetteProps {
@@ -36,17 +36,17 @@ function Cassette({func, isPlaying, isDay}: CassetteProps) {
             onClick={() => func()}
         />
         {(isHovering || isPlaying) && (
-            <div className="music">
-                <div className={isDay ? "noot-1" : "noot-1 night-note"}>
+            <div className='music'>
+                <div className={isDay ? 'noot-1' : 'noot-1 night-note'}>
                     &#9835; &#9833;
                     </div>
-                    <div className={isDay ? "noot-2" : "noot-2 night-note"}>
+                    <div className={isDay ? 'noot-2' : 'noot-2 night-note'}>
                     &#9833;
                     </div>
-                    <div className={isDay ? "noot-3" : "noot-3 night-note"}>
+                    <div className={isDay ? 'noot-3' : 'noot-3 night-note'}>
                     &#9839; &#9834;
                     </div>
-                    <div className={isDay ? "noot-4" : "noot-4 night-note"}>
+                    <div className={isDay ? 'noot-4' : 'noot-4 night-note'}>
                     &#9834;
                 </div>    
             </div>

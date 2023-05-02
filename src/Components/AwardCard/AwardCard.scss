@@ -1,0 +1,75 @@
+
+.award-card {
+    width: 90%;
+    height: 100%;
+
+    ::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        height: 20px;
+        width: 100%;
+        left: 0;
+        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg) bottom;
+    }
+
+    .image {
+        filter: sepia(0.85);
+        width: 400px;
+        object-fit: cover;
+        height: 200px;
+        border-radius: 7px;
+        z-index: 0;
+        position: relative;
+    }
+
+    .image:hover {
+        filter: none !important;
+        height: 215px;
+    }
+
+    .content {
+        background-color: #FFFFFF;
+        width: 90%;
+        margin-top: -5%;
+        margin-left: 5%;
+        z-index: 5;
+        padding: 6%;
+        position: relative;
+    }
+
+    .header {
+        text-align: start;
+        text-transform: uppercase;
+        font-family: 'Finger-paint';
+        color: #7C5B54;
+        line-height: 5px;
+    }
+
+    .subheader {
+        text-align: start;
+        font-family: 'Open-sans';
+        color: #000000;
+        line-height: 0;
+        font-size: 13px;
+    }
+
+    .body {
+        text-align: start;
+        font-size: 14px;
+    }
+
+    .see-more {
+        text-align: start;
+        text-decoration: underline;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .award-card {
+        margin-bottom: 30%;
+
+    }
+}

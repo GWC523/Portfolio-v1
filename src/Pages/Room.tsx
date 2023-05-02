@@ -3,11 +3,11 @@ import Laptop from '../Components/Laptop/Laptop';
 
 /* Assets (Audio and Fonts)*/
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import morningLofiMusic from "../Assets/Audio/Morning-Lofi-Music.mp3";
+import morningLofiMusic from '../Assets/Audio/Morning-Lofi-Music.mp3';
 
 
 /* CSS */
-import "./Room.scss"
+import './Room.scss'
 
 /* Components and Images */
 import Cassette from '../Components/Cassette/Cassette';
@@ -35,7 +35,6 @@ import RoomTagline from '../Assets/Images/Room/room_tagline.svg';
 
 
 function Room(): JSX.Element {
-  const [isLandscape, setIsLandscape] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [isOn, setIsOn] = useState<boolean>(false);
@@ -182,8 +181,8 @@ function Room(): JSX.Element {
                 />
               </div>
                 <Modal
-                  title="Contact Me"
-                  subTitle="via email"
+                  title='Contact Me'
+                  subTitle='via email'
                   showModal={showModal}
                   setShowModal={setShowModal}
                   children={copyToClipboardInput()}
@@ -215,36 +214,36 @@ function Room(): JSX.Element {
             <>
               <div className='background-mobile'>
                 <img src={Logo} alt='gwc.' className='logo'/>
-                <div className="lamp-2 js-turnoff-btn" onClick={() => setIsMobileOn(!isMobileOn)}>
-                  <div className="lamp-2-item lamp-2-top"></div>
-                  <div className="lamp-2-item lamp-2-middle"></div>
-                  <div className="lamp-2-item lamp-2-bottom"></div>
-                  <div className={isMobileOn ? "lamp-2-item lamp-2-light open-2" : "lamp-2-item"}></div>
+                <div className='lamp-2 js-turnoff-btn' onClick={() => setIsMobileOn(!isMobileOn)}>
+                  <div className='lamp-2-item lamp-2-top'></div>
+                  <div className='lamp-2-item lamp-2-middle'></div>
+                  <div className='lamp-2-item lamp-2-bottom'></div>
+                  <div className={isMobileOn ? 'lamp-2-item lamp-2-light open-2' : 'lamp-2-item'}></div>
                 </div>
-                                  <LaptopMobile/>
+                  <LaptopMobile/>
                   <div className='tagline-cont'>
                     <h1 className='big-text'>
                     <ConsoleText
-                      text="Crafting code with a passion"
+                      text='Crafting code with a passion'
                       speed={70}
                       cursor={true}
-                      cursorChar="_"
+                      cursorChar='_'
                       delay={1}
                     />
                     </h1>
                     <div className='tagline-cont-2'>
                       <span className='delay-appear-1'>for </span>
                       <span className='delay-appear-2'>
-                          <span className="title-word-mobile title-word-1-mobile">c</span>
-                          <span className="title-word-mobile title-word-2-mobile">r</span>
-                          <span className="title-word-mobile title-word-3-mobile">e</span>
-                          <span className="title-word-mobile title-word-4-mobile">a</span>
-                          <span className="title-word-mobile title-word-2-mobile">t</span>
-                          <span className="title-word-mobile title-word-3-mobile">i</span>
-                          <span className="title-word-mobile title-word-1-mobile">v</span>
-                          <span className="title-word-mobile title-word-4-mobile">i</span>
-                          <span className="title-word-mobile title-word-2-mobile">t</span>
-                          <span className="title-word-mobile title-word-4-mobile">y</span>
+                          <span className='title-word-mobile title-word-1-mobile'>c</span>
+                          <span className='title-word-mobile title-word-2-mobile'>r</span>
+                          <span className='title-word-mobile title-word-3-mobile'>e</span>
+                          <span className='title-word-mobile title-word-4-mobile'>a</span>
+                          <span className='title-word-mobile title-word-2-mobile'>t</span>
+                          <span className='title-word-mobile title-word-3-mobile'>i</span>
+                          <span className='title-word-mobile title-word-1-mobile'>v</span>
+                          <span className='title-word-mobile title-word-4-mobile'>i</span>
+                          <span className='title-word-mobile title-word-2-mobile'>t</span>
+                          <span className='title-word-mobile title-word-4-mobile'>y</span>
                       </span>
                       <span className='delay-appear-3'> and </span>
                       <span className='delay-appear-4'>innovation.</span>

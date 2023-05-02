@@ -3,7 +3,7 @@ import React from 'react';
 /* CSS */
 import './ContactList.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithubAlt, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faGithubAlt, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 function ContactList() {
   let github_link = 'https://github.com/GWC523';

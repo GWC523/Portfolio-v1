@@ -13,12 +13,12 @@ function LightSwitch({func, isDay, state}: LightSwitchProps) {
   return (
     <>
     <div 
-        className={state ? isDay ? "cube-switch active" : "cube-switch active night"  : isDay ? "cube-switch" : "cube-switch night"}
+        className={state ? isDay ? 'cube-switch active' : 'cube-switch active night'  : isDay ? 'cube-switch' : 'cube-switch night'}
         onClick={() => func()}
     >
-    <span className="switch ">
-        <span className="switch-state off"></span>
-        <span className="switch-state on"></span>
+    <span className='switch '>
+        <span className='switch-state off'></span>
+        <span className='switch-state on'></span>
     </span>
     </div>
 
