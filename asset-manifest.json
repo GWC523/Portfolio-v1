@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio-v1/static/css/main.83528ab1.css",
-    "main.js": "/Portfolio-v1/static/js/main.e1abde32.js",
+    "main.css": "/Portfolio-v1/static/css/main.35d59f96.css",
+    "main.js": "/Portfolio-v1/static/js/main.4c9c21b6.js",
+    "static/media/tcs.png": "/Portfolio-v1/static/media/tcs.544b13cad622c5dbe722.png",
+    "static/media/tcsfinals.png": "/Portfolio-v1/static/media/tcsfinals.7bd89b2d6c11af388c15.png",
     "static/media/Morning-Lofi-Music.mp3": "/Portfolio-v1/static/media/Morning-Lofi-Music.3c783b909a338c5f5dc8.mp3",
+    "static/media/vizathon.png": "/Portfolio-v1/static/media/vizathon.0cfd308175d782005104.png",
     "static/media/room_pictures.svg": "/Portfolio-v1/static/media/room_pictures.1ad328404a414a0350da65680b9d9a04.svg",
     "static/media/room_letters.svg": "/Portfolio-v1/static/media/room_letters.cd503448d6f7a97036135d0ed0cb701a.svg",
     "static/media/room_windows.svg": "/Portfolio-v1/static/media/room_windows.cf4e7732f59be28bd3d6a637b50735ab.svg",
     "static/media/room_tagline.svg": "/Portfolio-v1/static/media/room_tagline.0188964d6541487caf52e121a37b750e.svg",
+    "static/media/OpenSans-VariableFont_wdth,wght.ttf": "/Portfolio-v1/static/media/OpenSans-VariableFont_wdth,wght.cee866affd5294849699.ttf",
     "static/media/room_note.svg": "/Portfolio-v1/static/media/room_note.f6e5113a0efc97e452c80e2c8bf99c0c.svg",
     "static/media/Oswald-VariableFont_wght.ttf": "/Portfolio-v1/static/media/Oswald-VariableFont_wght.46d7853f0185f6bf0c93.ttf",
     "static/media/room_cassette.svg": "/Portfolio-v1/static/media/room_cassette.a86825b7338fb4f9f5ff0477a3732c91.svg",
     "static/media/room_resume.svg": "/Portfolio-v1/static/media/room_resume.77b8053b5b993bbeef635b1d9fcdb09b.svg",
+    "static/media/FingerPaint-Regular.ttf": "/Portfolio-v1/static/media/FingerPaint-Regular.dd5da2fccf5168a85cc3.ttf",
     "static/media/room_title.svg": "/Portfolio-v1/static/media/room_title.0d5b35f6c9884f0b63711a23a66cbb4e.svg",
     "static/media/UniSansDemo-HeavyCAPS.otf": "/Portfolio-v1/static/media/UniSansDemo-HeavyCAPS.bc21ec7d76675e472849.otf",
     "static/media/room_laptop.svg": "/Portfolio-v1/static/media/room_laptop.9465f657449f10aa5686bb0b8ccc9471.svg",
@@ -23,15 +28,16 @@
     "static/media/Moon Bold.otf": "/Portfolio-v1/static/media/Moon Bold.d24f9f10465d455976bf.otf",
     "static/media/Moon Light.otf": "/Portfolio-v1/static/media/Moon Light.b64abc268d3e51c92d4c.otf",
     "static/media/room_pencilcase.svg": "/Portfolio-v1/static/media/room_pencilcase.243fa3a62d06827496ee9478d3d00dbe.svg",
+    "static/media/ChatBubble.png": "/Portfolio-v1/static/media/ChatBubble.f5cbc9105b7a82ba1ec7.png",
     "static/media/room_vase.svg": "/Portfolio-v1/static/media/room_vase.f666f0273e011416e36ce7ac31e915ea.svg",
     "static/media/room_cup.svg": "/Portfolio-v1/static/media/room_cup.cf50299c83eb4ebef600747559f0b423.svg",
     "static/media/logo.svg": "/Portfolio-v1/static/media/logo.814e6bdb8260ceac18490ea4c529fe79.svg",
     "index.html": "/Portfolio-v1/index.html",
-    "main.83528ab1.css.map": "/Portfolio-v1/static/css/main.83528ab1.css.map",
-    "main.e1abde32.js.map": "/Portfolio-v1/static/js/main.e1abde32.js.map"
+    "main.35d59f96.css.map": "/Portfolio-v1/static/css/main.35d59f96.css.map",
+    "main.4c9c21b6.js.map": "/Portfolio-v1/static/js/main.4c9c21b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.83528ab1.css",
-    "static/js/main.e1abde32.js"
+    "static/css/main.35d59f96.css",
+    "static/js/main.4c9c21b6.js"
   ]
 }
