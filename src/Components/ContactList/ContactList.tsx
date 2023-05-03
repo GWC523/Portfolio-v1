@@ -12,35 +12,11 @@ function ContactList() {
   let github_link = 'https://github.com/GWC523';
   let LinkedIn_link = 'https://www.linkedin.com/in/gwyneth-chiu/';
 
-  const handleCopyToClipboard = (str: any) => {
-    if(copyRef.current) {
-      copyRef.current.select();
-      navigator.clipboard.writeText(str)
-    }
-  }
-
-    const copyToClipboardInput = () => {
-    return (
-      <div className='copy-modal-container'>
-      <div className='copy-text'>
-        <input type='text' className='copy-text-input' ref={copyRef} value='gwchiu@up.edu.ph' />
-        <button onClick={() => handleCopyToClipboard('gwchiu@up.edu.ph')}>
-          <FontAwesomeIcon
-            icon={'clone'}
-            title={'copy to clipboard'}
-            aria-hidden='true'
-            className='copy-icon'
-          />
-        </button>
-      </div>
-      </div>
-    )
-  }
-
   return (
     <div className='contact-list-cont'>
         <ul className='contact-list'>
             <li>
+                <a href="mailto:gwchiu@up.edu.ph" className='mail'>
                 <FontAwesomeIcon
                 icon={'envelope'}
                 title={'email'}
@@ -48,6 +24,7 @@ function ContactList() {
                 className='email-icon'
                 onClick={() => setSeeEmail(true)}
                 />  
+                </a>
             </li>
             <li>
                 <FontAwesomeIcon
@@ -68,13 +45,6 @@ function ContactList() {
                 />  
             </li>
         </ul>
-         <Modal
-            title='Contact Me'
-            subTitle='via email'
-            showModal={seeEmail}
-            setShowModal={setSeeEmail}
-            children={copyToClipboardInput()}
-        />
     </div>
   )
 }

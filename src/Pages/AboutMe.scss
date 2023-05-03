@@ -18,7 +18,6 @@
 
 .page-4 {
     font-family: 'Open-sans';
-    height: 100vh;
     background-color: #A57D71;
 }
 
@@ -305,12 +304,53 @@
 .footer {
     margin: 0px 10% 0px 10% !important;
     padding-top: 10%;
+    padding-bottom: 3%;
 }
 
 .chat-me-cont {
     background-color: #494542;
     padding: 1%;
     border-radius: 15px;
+
+    .header {
+        color: #FFFFFF;
+        font-family: 'Finger-paint';
+        font-size: 45px;
+        margin-top: 12%;
+        text-align: left;
+        line-height: 30px;
+        margin-bottom: 5%;
+    }
+
+    .content {
+        text-align: left;
+        color: #FFFFFF;
+        font-family: 'Open-sans';
+        font-weight: lighter;
+
+    }
+
+    .say-hello-btn {
+        float: left;
+        font-family: 'Open-sans';
+        font-size: 14px;
+        background-color: #FFFFFF;
+        border: 3px solid #DEB9A4;
+        border-radius: 50px;
+        padding: 1% 3.5% 1% 3.5%;
+    }
+}
+
+.chatbubble {
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.created-by {
+  margin-top: 200px;
+  color:#FFFFFF;
+  font-family: 'Finger-paint';
 }
 
 
@@ -347,6 +387,16 @@
     }
     .award-cards-cont {
         margin: 50px 0px 0px 10% !important;
+    }
+    .chat-me-cont {
+    padding: 6%;
+    padding-bottom: 10%;
+    width: 97%;
+    margin-left: 5% !important;
+
+        .header {
+            line-height: 50px !important;
+        }
     }
 
 }

@@ -5,6 +5,7 @@ import useMightyMouse from 'react-hook-mighty-mouse';
 import Vizathon from '../Assets/Images/AboutMe/vizathon.png';
 import TcsPH from '../Assets/Images/AboutMe/tcs.png';
 import TcsASEAN from '../Assets/Images/AboutMe/tcsfinals.png';
+import ChatBubble from '../Assets/Images/AboutMe/ChatBubble.png';
 
 /* CSS */
 import './AboutMe.scss';
@@ -351,9 +352,26 @@ function AboutMe() {
     </div>
     <div className='page-4'>
       <div className='footer'>
-        <div className='chat-me-cont'>
-          <p className='header'>Let's have a chat</p>
+        <div className='chat-me-cont row'>
+          <div className='col-lg-5 d-flex justify-content-start'>
+            <img src={ChatBubble} className='chatbubble'/>
+          </div>
+          <div className='col-lg-7'>
+            <p className='header'>Let's have a chat!</p>
+            <p className='content'>My inbox is always open whether you want to say hi, want to have a question, or offer an opportunity. </p>
+            <button className='say-hello-btn'> <a href="mailto:gwchiu@up.edu.ph" className='mail'>Say Hello</a></button>
+          </div>
         </div>
+          <p className='created-by'>
+            <FontAwesomeIcon
+                icon={'heart'}
+                title={'heart'}
+                aria-hidden='true'
+                className='heart-icon'
+                />  
+              <br/>
+            Designed and Developed by Gwyneth Chiu
+          </p>
       </div>
     </div>
     </div>

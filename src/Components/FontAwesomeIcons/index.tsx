@@ -43,6 +43,7 @@ import {
   faXmark,
   faClone,
   faArrowLeftLong,
+  faHeart,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -90,4 +91,5 @@ library.add(
   faClone,
   faArrowLeftLong,
   faEnvelope,
+  faHeart
 );
