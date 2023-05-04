@@ -2,6 +2,7 @@
     font-family: 'Open-sans';
     height: 100vh;
     overflow-x: hidden;
+    background-color: #F6F6F6;
 }
 
 .page-2 {
@@ -68,6 +69,7 @@
 .prof-button, .casual-button {
     border: none;
     background-color: transparent;
+    color: #000000 !important;
 }
 
 .chosen {
@@ -370,13 +372,13 @@
     .company-list {
         padding-left: 15%;
         padding-right: 15%;
+        padding-bottom: 10%;
     }
     .contact-list-cont  {
         bottom: 3% !important;
     }
     .exp-content {
-        margin: 0 0 50px 55px;
-        width: 70%;
+        margin: 0px 50px 80px 55px;
     }
     .skill-cont {
         padding-left: 50px;

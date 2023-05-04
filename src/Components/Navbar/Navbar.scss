@@ -75,15 +75,16 @@
 }
 
 @media screen and (max-width: 768px) {
+
   .navigation-menu ul {
     // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar)
     position: absolute;
     top: 60px;
-    left: 0;
+    left: -5px;
     // stacks the li tags vertically 
     flex-direction: column;
    // makes menu span full height and width
-    width: 100%;
+    width: 104%;
     height: calc(100vh - 77px);
     background-color: white;
     border-top: 1px solid black;

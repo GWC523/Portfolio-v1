@@ -14,6 +14,7 @@ import ContactList from '../Components/ContactList/ContactList';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAws, faBootstrap, faGitAlt, faJs, faNodeJs, faPhp, faPython, faReact, faSass } from '@fortawesome/free-brands-svg-icons';
 import AwardCard from '../Components/AwardCard/AwardCard';
+import { Animate } from '../Components/Animations/AnimationLibrary';
 
 function AboutMe() {
   const [introStyle, setIntroStyle] = useState('prof');
@@ -84,6 +85,7 @@ function AboutMe() {
     </div>
     </div>
     <div className='page-2'>
+    <Animate.FadeUp>
      <h2 className='skills-header'>Skills ------</h2>
     <div className='skill-cont row'>
     <ul className='skill-list'>
@@ -222,6 +224,8 @@ function AboutMe() {
           </li>
         </ul>
      </div>
+    </Animate.FadeUp>
+    <Animate.FadeUp>
      <h2 className='exp-header'>Where I've Worked ------</h2>
      <div className='exp-cont row'>
           <div className='col-sm-3'>
@@ -314,44 +318,58 @@ function AboutMe() {
             )}
           </div>
      </div>
+     </Animate.FadeUp>
     </div>
     <div className='page-3'>
      <h2 className='awards-header'>Activities & Awards</h2>
      <div className='award-cards-cont row'>
          <div className='col-sm-4'>
-           <AwardCard
-              image={Vizathon}
-              header='Vizathon 2021'
-              subheader='Innovation Award'
-              content='The People vs Covid-19 is a web app that shows interactive data visualization of COVID-19 cases around the world. It was awarded the innovation award against 60 projects.'
-              seeMoreLink=''
-              redirectLink=''
-            />
+          <Animate.FadeIn>
+            <Animate.FadeUp>
+              <AwardCard
+                  image={Vizathon}
+                  header='Vizathon 2021'
+                  subheader='Innovation Award'
+                  content='The People vs Covid-19 is a web app that shows interactive data visualization of COVID-19 cases around the world. It was awarded the innovation award against 60 projects.'
+                  seeMoreLink=''
+                  redirectLink=''
+                />
+            </Animate.FadeUp>
+          </Animate.FadeIn>
          </div>
          <div className='col-sm-4'>
-           <AwardCard
-              image={TcsPH}
-              header='TCS Sustainathon PH 2021'
-              subheader='1st Runner Up'
-              content="Hosted by TCS Philippines, we secured the finalist spot for the ASEAN Finals as the top 2 team. With the United Nation's sustainable goal no.4 in mind (quality education), we designed Kopi-han, a peer-to-peer learning platform."
-              seeMoreLink=''
-              redirectLink=''
-            />
+          {/* <Animate.FadeIn> */}
+            <Animate.FadeUp>
+            <AwardCard
+                image={TcsPH}
+                header='TCS Sustainathon PH 2021'
+                subheader='1st Runner Up'
+                content="Hosted by TCS Philippines, we secured the finalist spot for the ASEAN Finals as the top 2 team. With the United Nation's sustainable goal no.4 in mind (quality education), we designed Kopi-han, a peer-to-peer learning platform."
+                seeMoreLink=''
+                redirectLink=''
+              />
+            </Animate.FadeUp>
+          {/* </Animate.FadeIn> */}
          </div>
          <div className='col-sm-4'>
-           <AwardCard
-              image={TcsASEAN}
-              header='TCS Sustainathon ASEAN 2021'
-              subheader='1st Runner Up'
-              content="We competed against the finalists from Singapore and Malaysia at the headquarters of TCS Singapore. With 6 teams, we won 1st runner-up. Representatives from LinkedIn, Stewardship Asia Centre, Temasek Trust, TCS and 2020 Sustainathon champion"
-              seeMoreLink=''
-              redirectLink=''
-            />
+          <Animate.FadeIn>
+            <Animate.FadeUp>
+              <AwardCard
+                  image={TcsASEAN}
+                  header='TCS Sustainathon ASEAN 2021'
+                  subheader='1st Runner Up'
+                  content="We competed against the finalists from Singapore and Malaysia at the headquarters of TCS Singapore. With 6 teams, we won 1st runner-up. Representatives from LinkedIn, Stewardship Asia Centre, Temasek Trust, TCS and 2020 Sustainathon champion"
+                  seeMoreLink=''
+                  redirectLink=''
+                />
+            </Animate.FadeUp>
+          </Animate.FadeIn>
          </div>
      </div>
     </div>
     <div className='page-4'>
       <div className='footer'>
+        <Animate.FadeUp>
         <div className='chat-me-cont row'>
           <div className='col-lg-5 d-flex justify-content-start'>
             <img src={ChatBubble} className='chatbubble'/>
@@ -362,6 +380,8 @@ function AboutMe() {
             <button className='say-hello-btn'> <a href="mailto:gwchiu@up.edu.ph" className='mail'>Say Hello</a></button>
           </div>
         </div>
+        </Animate.FadeUp>
+        <Animate.FadeUp>
           <p className='created-by'>
             <FontAwesomeIcon
                 icon={'heart'}
@@ -372,6 +392,7 @@ function AboutMe() {
               <br/>
             Designed and Developed by Gwyneth Chiu
           </p>
+        </Animate.FadeUp>
       </div>
     </div>
     </div>
