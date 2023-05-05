@@ -119,10 +119,13 @@
 }
 
 @media screen and (max-width: 450px) {
+  .navigation {
+    left: 2.7%;
+  }
   .hamburger {
     margin-left: -20px;
   }
   .light-mode-icon {
-  margin-right: 34px;
+  margin-right: 20px;
   }
 }

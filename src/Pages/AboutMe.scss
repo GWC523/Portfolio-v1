@@ -360,14 +360,18 @@
  
     .name {
         font-size: 45px;
+        margin-left: 45px;
     }
     .introduction {
-        margin-top: 20px;
+        margin: 20px 0 0 45px;
         font-size: 14px;
         width: 320px;
     }
     .eyes-follow {
         display: none;
+    }
+    .intro-option {
+        margin-left: 45px;
     }
     .company-list {
         padding-left: 15%;
@@ -399,6 +403,9 @@
         .header {
             line-height: 50px !important;
         }
+    }
+    .date-subheader {
+        line-height: 10px;
     }
 
 }

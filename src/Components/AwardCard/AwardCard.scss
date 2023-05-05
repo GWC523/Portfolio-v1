@@ -24,7 +24,7 @@
     }
 
     .image:hover {
-        filter: none !important;
+        filter: none;
         height: 215px;
     }
 
@@ -74,5 +74,10 @@
     }
     .header {
         line-height: 15px !important;
+    }
+
+    .image:hover {
+        filter: sepia(0.85) !important;
+        height: 215px;
     }
 }
