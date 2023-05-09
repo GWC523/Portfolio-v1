@@ -9,10 +9,11 @@ import './Navbar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface NavbarProps {
-  path: String
+  path: any,
+  backPath: any
 }
 
-function Navbar({path} : NavbarProps) {
+function Navbar({path, backPath} : NavbarProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   let navigate = useNavigate();
 
@@ -34,7 +35,7 @@ function Navbar({path} : NavbarProps) {
       <div
         className={isExpanded ? "navigation-menu expanded" : "navigation-menu"}>
         <ul>
-          <li onClick={() => navigate("/")}>
+          <li onClick={() => navigate(backPath)}>
             <a>{isExpanded ? 
                     "Home" :    
                     <FontAwesomeIcon

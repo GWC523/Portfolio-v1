@@ -11,6 +11,7 @@ import "./Components/FontAwesomeIcons";
 /** PAGES **/
 import Room from "./Pages/Room";
 import AboutMe from "./Pages/AboutMe";
+import Vizathon from "./Pages/Vizathon";
 
 
 function App() {
@@ -44,6 +45,10 @@ function App() {
               <Route
                 path="/aboutMe"
                 element={<AboutMe/>}
+              />
+              <Route
+                path="/aboutMe/Vizathon2021"
+                element={<Vizathon/>}
               />
             </Routes>
           </Router>

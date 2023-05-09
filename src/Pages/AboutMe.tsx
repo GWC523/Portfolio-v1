@@ -41,7 +41,7 @@ function AboutMe() {
   return (
     <>
     <div className='background-2'>
-    <Navbar path={'/aboutMe'}/>
+    <Navbar path='/aboutMe' backPath='/'/>
     <ContactList/>
     <div className='page'>
       <div className='intro-cont row'>
@@ -331,8 +331,8 @@ function AboutMe() {
                   header='Vizathon 2021'
                   subheader='Innovation Award'
                   content='The People vs Covid-19 is a web app that shows interactive data visualization of COVID-19 cases around the world. It was awarded the innovation award against 60 projects.'
-                  seeMoreLink=''
-                  redirectLink=''
+                  seeMoreLink='/aboutMe/Vizathon2021'
+                  redirectLink='https://the-people-vs-covid.web.app/'
                 />
             </Animate.FadeUp>
           </Animate.FadeIn>

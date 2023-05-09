@@ -18,7 +18,7 @@ function AwardCard({image, header, subheader, content, seeMoreLink, redirectLink
 
   return (
      <div className='award-card'>
-        <img src={image} className='image' onClick={() => navigate(redirectLink)}/>
+        <img src={image} className='image' onClick={() =>  window.open(redirectLink, '_blank', 'noreferrer')}/>
             <div className='content'>
             <p className='header'>{header}</p>
             <p className='subheader'>{subheader}</p>
