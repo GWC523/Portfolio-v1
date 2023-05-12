@@ -15,6 +15,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAws, faBootstrap, faGitAlt, faJs, faNodeJs, faPhp, faPython, faReact, faSass } from '@fortawesome/free-brands-svg-icons';
 import AwardCard from '../Components/AwardCard/AwardCard';
 import { Animate } from '../Components/Animations/AnimationLibrary';
+import Footer from '../Components/Footer/Footer';
 
 function AboutMe() {
   const [introStyle, setIntroStyle] = useState('prof');
@@ -382,16 +383,7 @@ function AboutMe() {
         </div>
         </Animate.FadeUp>
         <Animate.FadeUp>
-          <p className='created-by'>
-            <FontAwesomeIcon
-                icon={'heart'}
-                title={'heart'}
-                aria-hidden='true'
-                className='heart-icon'
-                />  
-              <br/>
-            Designed and Developed by Gwyneth Chiu
-          </p>
+          <Footer/>
         </Animate.FadeUp>
       </div>
     </div>
