@@ -84,3 +84,48 @@
     }
 
 }
+
+@media screen and (max-width: 768px) {
+    .vizathon-title {
+        font-size: 150%;
+        margin-top: 130px;
+        margin-bottom: 50px;
+    }
+    .vizathon-img {
+        width: 70% !important;
+        margin-left: 16%;
+    }
+    .content-card-1 {
+        background-color: #FFFFFF;
+        width: 64.8% !important;
+        margin-left: 18.5% !important;
+        margin-top: 10% !important;
+        min-height: 300px;
+        padding: 30px !important;
+    }
+    .content-card-2 {
+        background-color: #FFFFFF;
+        width: 64.8%;
+        margin-top: 0%;
+        margin-left: 18.5%;
+        padding: 30px;
+        text-align: left;
+    }
+    .content-card-3 {
+        background-color: #FFFFFF;
+        width: 64.8%;
+        margin-top: -100%;
+        margin-left: 18.5%;
+
+    }
+    .award-img {
+        width: 80%;
+        position: relative;
+        bottom: -280%;
+        margin-left: 60%;
+    }
+    .vacc-img {
+        width: 70%;
+        margin-right: 50%;
+    }
+}

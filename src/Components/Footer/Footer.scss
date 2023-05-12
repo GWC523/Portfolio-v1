@@ -11,3 +11,9 @@
 .dark-mode {
     color: #FFFFFF;
 }
+
+@media screen and (max-width: 768px) {
+    .created-by {
+        font-size: 10px;
+    }
+}

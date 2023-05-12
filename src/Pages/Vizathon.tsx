@@ -76,7 +76,7 @@ function Vizathon() {
               </p>
             </div>
           </div>
-          <div className='mt-5'>
+          <div className='mt-2'>
           <Footer mode="light-mode"/>
           </div>
         </div>
