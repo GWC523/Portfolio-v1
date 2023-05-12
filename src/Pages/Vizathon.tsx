@@ -12,6 +12,7 @@ import Award from '../Assets/Images/Awards/award.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 import Footer from '../Components/Footer/Footer';
+import { Animate } from '../Components/Animations/AnimationLibrary';
 
 function Vizathon() {
   return (
@@ -22,15 +23,18 @@ function Vizathon() {
         <h1 className='vizathon-title'>Vizathon 2021</h1>
         <div className='row vizathon-content'>
             <img src={VizathonImg} className='vizathon-img' alt='site image'/>
+            <Animate.FadeUp>
             <div className='content-card-1'>
                 <h3 className='card-title'>Inspiration</h3>
                 <p className='card-content'>
                     We were motivated by the dedication of medical professionals and researchers who tirelessly combat the pandemic. In addition to them, we have been impressed by the effectiveness of informative visualizations, such as the one shown here. With our inspirations in mind, we have also developed our own visualizations that convey information in an attractive and easily understandable way for the wider public.
                 </p>
             </div>
+            </Animate.FadeUp>
         </div>
         <div className='row'>
           <div className='col-lg-6 mt-5'>
+            <Animate.FadeUp>
             <div className='content-card-2'>
               <h3 className='card-title'>About the Project</h3>
               <p className='card-content'>
@@ -56,6 +60,7 @@ function Vizathon() {
                 />  
               </div>
             </div>
+            </Animate.FadeUp>
           </div>
           <div className='col-lg-6'>
             <img src={VaccImg} className='vacc-img' alt='vacc card image'/>
@@ -66,6 +71,7 @@ function Vizathon() {
             <img src={Award} className='award-img' alt='award image'/>
           </div>
           <div className='col-lg-6 mt-5'>
+            <Animate.FadeUp>
             <div className='content-card-3'>
               <h3 className='card-title'>Experience</h3>
               <p className='card-content'>
@@ -75,10 +81,13 @@ function Vizathon() {
                 Overall, we are proud of what we accomplished in this project. Both of us learned about data visualization and discover the possibilities of APIs in crafting visualizations that are easily understood by the people. 
               </p>
             </div>
+            </Animate.FadeUp>
           </div>
+          <Animate.FadeUp>
           <div className='mt-2'>
           <Footer mode="light-mode"/>
           </div>
+          </Animate.FadeUp>
         </div>
         
     </div>
