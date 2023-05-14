@@ -1,5 +1,5 @@
 .asean-img {
-    width: 80%;
+    width: 80% !important;
     margin-left: 10%;
 }
 
@@ -16,5 +16,25 @@
 
     .card-title {
         font-family: 'Finger-paint';
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .asean-img {
+        width: 75% !important;
+        margin-left: 12%;
+    }
+    .v2 {
+        font-size: 30px;
+    }
+    .asean-me-img {
+        width: 75%;
+        margin-left: 1%;
+    }
+    .content-card-6 {
+        width: 75%;
+        margin-top: 10%;
+        margin-left: 12%;
+        padding: 30px;
     }
 }

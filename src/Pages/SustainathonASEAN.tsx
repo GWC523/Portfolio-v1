@@ -17,7 +17,7 @@ function SustainathonASEAN() {
      <Navbar path='/aboutMe' backPath='/aboutMe'/>
         <ContactList/>
         <div className='page'>
-            <h1 className='sustainathon-title'>TCS Sustainathon ASEAN 2021</h1>
+            <h1 className='sustainathon-title v2'>TCS Sustainathon ASEAN 2021</h1>
             <Animate.FadeUp>
             <div className='row sustainathon-content'>
                 <img src={SustainathonASEANImg} className='asean-img' alt='award picture'/>
