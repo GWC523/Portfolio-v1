@@ -39,3 +39,26 @@
         font-family: 'Finger-paint';
     }
 }
+
+@media screen and (max-width: 768px) {
+    .sustainathon-title {
+        font-size: 25px;
+        margin-top: 120px;
+    }
+    .sustainathon-img {
+        width: 80% !important;
+        margin-left: 10%;
+    }
+    .content-card-4 {
+        width: 70%;
+        margin-top: 0%;
+        margin-left: 14%;
+        padding: 50px;
+    }
+    .sustainathon-ph-img {
+        margin-top: 10%;
+        width: 70%;
+        margin-right: 3.5%;
+    }
+
+}
