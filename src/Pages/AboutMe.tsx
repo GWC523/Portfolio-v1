@@ -346,7 +346,7 @@ function AboutMe() {
                 header='TCS Sustainathon PH 2021'
                 subheader='1st Runner Up'
                 content="Hosted by TCS Philippines, we secured the finalist spot for the ASEAN Finals as the top 2 team. With the United Nation's sustainable goal no.4 in mind (quality education), we designed Kopi-han, a peer-to-peer learning platform."
-                seeMoreLink=''
+                seeMoreLink='/aboutMe/SustainathonPH21'
                 redirectLink=''
               />
             </Animate.FadeUp>

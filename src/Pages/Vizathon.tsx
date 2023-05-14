@@ -49,7 +49,7 @@ function Vizathon() {
                 title={'site'}
                 aria-hidden='true'
                 className='site-icon'
-                onClick = {() => { window.open('https://the-people-vs-covid.web.app/', '_blank', 'noreferrer') }}
+                onClick = {() => { window.open('https://devpost.com/software/the-people-vs-covid-19', '_blank', 'noreferrer') }}
                 />  
                 <FontAwesomeIcon
                 icon={faGithubAlt}
