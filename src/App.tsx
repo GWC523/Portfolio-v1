@@ -13,6 +13,7 @@ import Room from "./Pages/Room";
 import AboutMe from "./Pages/AboutMe";
 import Vizathon from "./Pages/Vizathon";
 import SustainathonPH from "./Pages/SustainathonPH";
+import SustainathonASEAN from "./Pages/SustainathonASEAN";
 
 
 function App() {
@@ -51,9 +52,13 @@ function App() {
                 path="/aboutMe/Vizathon2021"
                 element={<Vizathon/>}
               />
-               <Route
+              <Route
                 path="/aboutMe/SustainathonPH21"
                 element={<SustainathonPH/>}
+              />
+              <Route
+                path="/aboutMe/SustainathonASEAN21"
+                element={<SustainathonASEAN/>}
               />
             </Routes>
           </Router>

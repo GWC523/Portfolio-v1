@@ -360,8 +360,8 @@ function AboutMe() {
                   header='TCS Sustainathon ASEAN 2021'
                   subheader='1st Runner Up'
                   content="We competed against the finalists from Singapore and Malaysia at the headquarters of TCS Singapore. With 6 teams, we won 1st runner-up. Representatives from LinkedIn, Stewardship Asia Centre, Temasek Trust, TCS and 2020 Sustainathon champion"
-                  seeMoreLink=''
-                  redirectLink=''
+                  seeMoreLink='/aboutMe/SustainathonASEAN21'
+                  redirectLink='https://www.youtube.com/live/Lfmtqvxcl98?feature=share&t=5984'
                 />
             </Animate.FadeUp>
           </Animate.FadeIn>
