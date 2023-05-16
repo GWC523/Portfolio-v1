@@ -1,14 +1,17 @@
 import React, {useState} from 'react'
 import laptop from '../../Assets/Images/Room/room_laptop.svg'
+import { useNavigate } from "react-router-dom";
 
 /* CSS */
 import './Laptop.scss';
 
 interface LaptopProps {
   isDay: Boolean,
+  path: any
 }
 
-function Laptop({isDay} : LaptopProps) {
+function Laptop({isDay, path} : LaptopProps) {
+  let navigate = useNavigate();
 
   const [style, setStyle] = useState({
     display: 'none',
@@ -56,6 +59,7 @@ function Laptop({isDay} : LaptopProps) {
                     onMouseLeave={e => {
                         handleOffHover();
                     }}
+                    onClick={() => navigate(path)}
                 >
                     <div className={isDay ? 'mid left-screen' : 'mid left-screen on'}>
                     <div 

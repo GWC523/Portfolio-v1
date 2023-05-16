@@ -45,6 +45,7 @@ import {
   faArrowLeftLong,
   faHeart,
   faGlobe,
+  faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -93,5 +94,6 @@ library.add(
   faArrowLeftLong,
   faEnvelope,
   faHeart,
-  faGlobe
+  faGlobe,
+  faChevronRight
 );

@@ -171,6 +171,7 @@ function Room(): JSX.Element {
               <div className='laptop-cont'>
                 <Laptop
                   isDay={isDay}
+                  path={'works'}
                 />
               </div>
               <div className='cassette-cont'>

@@ -46,11 +46,11 @@ function Navbar({path, backPath} : NavbarProps) {
                     />}
             </a>
           </li>
-          <li>
+          <li onClick={() => navigate('/aboutMe')}>
             <a className={path == "/aboutMe" ? "active-link": "inactive-link"}>About</a>
           </li>
-          <li>
-            <a className={path == "/Works" ? "active-link": "inactive-link"}>Works</a>
+          <li onClick={() => navigate('/works')}>
+            <a className={path == "/works" ? "active-link": "inactive-link"}>Works</a>
           </li>
         </ul>
       </div>

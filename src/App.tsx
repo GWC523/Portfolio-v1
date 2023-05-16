@@ -14,6 +14,7 @@ import AboutMe from "./Pages/AboutMe";
 import Vizathon from "./Pages/Vizathon";
 import SustainathonPH from "./Pages/SustainathonPH";
 import SustainathonASEAN from "./Pages/SustainathonASEAN";
+import Works from "./Pages/Works";
 
 
 function App() {
@@ -59,6 +60,10 @@ function App() {
               <Route
                 path="/aboutMe/SustainathonASEAN21"
                 element={<SustainathonASEAN/>}
+              />
+              <Route
+                path="/works"
+                element={<Works/>}
               />
             </Routes>
           </Router>
