@@ -7,61 +7,6 @@
 }
 
 .work-cards {
-    margin: 50px;
+    margin: 50px !important;
 }
 
-.work-card {
-    background-color: #ffffff;
-
-    .description {
-        text-align: left;
-        padding: 10px;
-
-        .visit-icon {
-            font-size: 25px;
-            -ms-transform: translateY(50%);
-            transform: translateY(50%);
-        }
-
-        .card-title {
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        .card-subtitle {
-            font-size: 10px;
-        }
-
-        .tags {
-            padding-left: 0;
-            margin-bottom: 0;
-        
-            li {
-                font-size: 10px;
-                display: inline;
-                padding-right: 5px;
-
-                .frontend {
-                    height: 5px;
-                    width: 5px;
-                    background-color: #f9ca66;
-                    border-radius: 50%;
-                    display: inline-block;
-                    margin-right: 3px;
-                    margin-bottom: 1px;
-                }
-
-                .backend {
-                    height: 5px;
-                    width: 5px;
-                    background-color: #4b9bf1;
-                    border-radius: 50%;
-                    display: inline-block;
-                    margin-right: 3px;
-                    margin-bottom: 1px;
-                }
-            }
-            
-        }
-    }
-}
