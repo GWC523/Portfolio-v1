@@ -21,9 +21,10 @@ function Works() {
     <ContactList/>
     <div className='page'>
         <h1 className='works-title'>Works</h1>
+        <div className='work-cards'>
         <Animate.FadeUp>
-        <div className='row work-cards'>
-            <div className='col-lg-4'>
+        <div className='row'>
+            <div className='col-sm-4'>
                 <WorkCard
                     img={msersImg}
                     title='Student Engagement Detector'
@@ -31,7 +32,7 @@ function Works() {
                     tags={['frontend', 'backend']}
                 />
             </div>
-            <div className='col-lg-4'>
+            <div className='col-sm-4'>
                 <WorkCard
                     img={portfolioImg}
                     title='My Developer Portfolio'
@@ -39,7 +40,7 @@ function Works() {
                     tags={['frontend']}
                 />
             </div>
-            <div className='col-lg-4'>
+            <div className='col-sm-4'>
                 <WorkCard
                     img={erpImg}
                     title='ERP System Template'
@@ -50,8 +51,8 @@ function Works() {
         </div>
         </Animate.FadeUp>
         <Animate.FadeUp>
-        <div className='row work-cards'>
-            <div className='col-lg-4'>
+        <div className='row'>
+            <div className='col-sm-4'>
                 <WorkCard
                     img={dentalImg}
                     title='Digital Dental Chart'
@@ -59,7 +60,7 @@ function Works() {
                     tags={['frontend']}
                 />
             </div>
-            <div className='col-lg-4'>
+            <div className='col-sm-4'>
                 <WorkCard
                     img={simulationImg}
                     title='Memory Management Simulation'
@@ -69,6 +70,7 @@ function Works() {
             </div>
         </div>
         </Animate.FadeUp>
+        </div>
     </div>
     </div>
   )
