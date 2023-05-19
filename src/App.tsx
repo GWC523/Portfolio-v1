@@ -15,6 +15,7 @@ import Vizathon from "./Pages/Vizathon";
 import SustainathonPH from "./Pages/SustainathonPH";
 import SustainathonASEAN from "./Pages/SustainathonASEAN";
 import Works from "./Pages/Works";
+import Loader from "./Components/Loader/Loader";
 
 
 function App() {
@@ -23,12 +24,14 @@ function App() {
   useEffect(() => {
     // callback function to call when event triggers
     const onPageLoad = () => {
-      setIsPageReady(true);
+      setTimeout(() => {
+        setIsPageReady(true);
+      }, 1000);
     };
 
     // Check if the page has already loaded
     if (document.readyState === 'complete') {
-      onPageLoad();
+        onPageLoad();
     } else {
       window.addEventListener('load', onPageLoad, false);
       // Remove the event listener when component unmounts
@@ -68,7 +71,7 @@ function App() {
             </Routes>
           </Router>
         ) : (
-          <div>loading</div>
+          <Loader/>
         )}
       </div>
   );

@@ -35,7 +35,7 @@ function Navbar({path, backPath} : NavbarProps) {
       <div
         className={isExpanded ? "navigation-menu expanded" : "navigation-menu"}>
         <ul>
-          <li onClick={() => navigate(backPath)}>
+          <li onClick={() => navigate(-1)}>
             <a>{isExpanded ? 
                     "Home" :    
                     <FontAwesomeIcon
@@ -54,9 +54,6 @@ function Navbar({path, backPath} : NavbarProps) {
           </li>
         </ul>
       </div>
-      <span className='lightmode-toggle'>
-        <img src={Sun} className='light-mode-icon'/>
-      </span>
     </nav>
   )
 }

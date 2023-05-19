@@ -31,6 +31,7 @@ import Logo from '../Assets/Images/logo.svg';
 import Modal from '../Components/Modal/Modal';
 import RoomTitle from '../Assets/Images/Room/room_title.svg';
 import RoomTagline from '../Assets/Images/Room/room_tagline.svg';
+import Loader from '../Components/Loader/Loader';
 
 
 
@@ -41,8 +42,10 @@ function Room(): JSX.Element {
   const [isMobileOn, setIsMobileOn] = useState<boolean>(true);
   const [isDay, setIsDay] = useState<boolean>(true);
   const [showModal, setShowModal] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const audioRef = useRef<HTMLAudioElement>(null);
   const copyRef = useRef<HTMLInputElement>(null);
+
 
   const togglePlay: Function = () => {
     //Lofi Music
@@ -99,8 +102,15 @@ function Room(): JSX.Element {
     )
   }
 
+  const showLoader = () => {
+    setTimeout(() => {
+      setIsLoading(true);
+    }, 1000)
+  }
+
 
   useEffect(() => {
+    showLoader();
     //Handle day or night mode
     const hours = new Date().getHours()
     const isDayTime = hours > 6 && hours < 18
@@ -130,6 +140,7 @@ function Room(): JSX.Element {
     <>
         {(!isMobile)? (
             <div className={isDay ? 'background' : 'background-night'}>
+              {!isLoading && (<Loader/>)}
               <img src={Shelf} className={isDay ? 'shelf' : 'shelf night'}/>
               <img src={Plant} className={isDay ? 'plant' : 'plant night'}/>
               <div className={'light-switch-cont'}>
