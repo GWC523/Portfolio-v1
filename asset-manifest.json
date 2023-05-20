@@ -1,14 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio-v1/static/css/main.c6c9a885.css",
-    "main.js": "/Portfolio-v1/static/js/main.5a5f97d9.js",
+    "main.css": "/Portfolio-v1/static/css/main.8c40bfd6.css",
+    "main.js": "/Portfolio-v1/static/js/main.e857fd49.js",
+    "static/media/awardSustainathonPH.png": "/Portfolio-v1/static/media/awardSustainathonPH.544b13cad622c5dbe722.png",
     "static/media/tcs.png": "/Portfolio-v1/static/media/tcs.544b13cad622c5dbe722.png",
+    "static/media/sustainathonASEAN.png": "/Portfolio-v1/static/media/sustainathonASEAN.7bd89b2d6c11af388c15.png",
     "static/media/tcsfinals.png": "/Portfolio-v1/static/media/tcsfinals.7bd89b2d6c11af388c15.png",
+    "static/media/Kopihan.png": "/Portfolio-v1/static/media/Kopihan.7e6d1a37dab7b3e557f9.png",
     "static/media/Morning-Lofi-Music.mp3": "/Portfolio-v1/static/media/Morning-Lofi-Music.3c783b909a338c5f5dc8.mp3",
-    "static/media/vizathon.png": "/Portfolio-v1/static/media/vizathon.0cfd308175d782005104.png",
+    "static/media/vizathon.png": "/Portfolio-v1/static/media/vizathon.523276198d309688fd8c.png",
+    "static/media/sustainathonMe.jpg": "/Portfolio-v1/static/media/sustainathonMe.f496b6df864292ed7f26.jpg",
+    "static/media/erp.png": "/Portfolio-v1/static/media/erp.a97eace9fc4f1811ee6e.png",
     "static/media/room_pictures.svg": "/Portfolio-v1/static/media/room_pictures.1ad328404a414a0350da65680b9d9a04.svg",
     "static/media/room_letters.svg": "/Portfolio-v1/static/media/room_letters.cd503448d6f7a97036135d0ed0cb701a.svg",
+    "static/media/memorymanager.png": "/Portfolio-v1/static/media/memorymanager.37c14235f94636ab9668.png",
     "static/media/room_windows.svg": "/Portfolio-v1/static/media/room_windows.cf4e7732f59be28bd3d6a637b50735ab.svg",
+    "static/media/portfolio.png": "/Portfolio-v1/static/media/portfolio.ae781ba0fbdf5f1a76ab.png",
+    "static/media/msers.png": "/Portfolio-v1/static/media/msers.110c7c36d4d4411dc0c4.png",
     "static/media/room_tagline.svg": "/Portfolio-v1/static/media/room_tagline.0188964d6541487caf52e121a37b750e.svg",
     "static/media/OpenSans-VariableFont_wdth,wght.ttf": "/Portfolio-v1/static/media/OpenSans-VariableFont_wdth,wght.cee866affd5294849699.ttf",
     "static/media/room_note.svg": "/Portfolio-v1/static/media/room_note.f6e5113a0efc97e452c80e2c8bf99c0c.svg",
@@ -20,6 +28,7 @@
     "static/media/UniSansDemo-HeavyCAPS.otf": "/Portfolio-v1/static/media/UniSansDemo-HeavyCAPS.bc21ec7d76675e472849.otf",
     "static/media/room_laptop.svg": "/Portfolio-v1/static/media/room_laptop.9465f657449f10aa5686bb0b8ccc9471.svg",
     "static/media/room_light.svg": "/Portfolio-v1/static/media/room_light.baca9839d7dfb8324a4b008f7c8698f6.svg",
+    "static/media/vacc.png": "/Portfolio-v1/static/media/vacc.f539efc1118c445edea4.png",
     "static/media/room_plant.svg": "/Portfolio-v1/static/media/room_plant.91396ae62525fa3713ee04d49f4a81b0.svg",
     "static/media/DIGITALDREAM.ttf": "/Portfolio-v1/static/media/DIGITALDREAM.a73dceeac9213d0ee0e7.ttf",
     "static/media/Prime-Regular.otf": "/Portfolio-v1/static/media/Prime-Regular.122e89e993e44f9014e4.otf",
@@ -27,17 +36,18 @@
     "static/media/Prime-Light.otf": "/Portfolio-v1/static/media/Prime-Light.c78df5e438a322b8d444.otf",
     "static/media/Moon Bold.otf": "/Portfolio-v1/static/media/Moon Bold.d24f9f10465d455976bf.otf",
     "static/media/Moon Light.otf": "/Portfolio-v1/static/media/Moon Light.b64abc268d3e51c92d4c.otf",
+    "static/media/award.png": "/Portfolio-v1/static/media/award.ff81d686dcc1029683a6.png",
     "static/media/room_pencilcase.svg": "/Portfolio-v1/static/media/room_pencilcase.243fa3a62d06827496ee9478d3d00dbe.svg",
     "static/media/ChatBubble.png": "/Portfolio-v1/static/media/ChatBubble.f5cbc9105b7a82ba1ec7.png",
     "static/media/room_vase.svg": "/Portfolio-v1/static/media/room_vase.f666f0273e011416e36ce7ac31e915ea.svg",
     "static/media/room_cup.svg": "/Portfolio-v1/static/media/room_cup.cf50299c83eb4ebef600747559f0b423.svg",
     "static/media/logo.svg": "/Portfolio-v1/static/media/logo.814e6bdb8260ceac18490ea4c529fe79.svg",
     "index.html": "/Portfolio-v1/index.html",
-    "main.c6c9a885.css.map": "/Portfolio-v1/static/css/main.c6c9a885.css.map",
-    "main.5a5f97d9.js.map": "/Portfolio-v1/static/js/main.5a5f97d9.js.map"
+    "main.8c40bfd6.css.map": "/Portfolio-v1/static/css/main.8c40bfd6.css.map",
+    "main.e857fd49.js.map": "/Portfolio-v1/static/js/main.e857fd49.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6c9a885.css",
-    "static/js/main.5a5f97d9.js"
+    "static/css/main.8c40bfd6.css",
+    "static/js/main.e857fd49.js"
   ]
 }
