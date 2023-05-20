@@ -1,5 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 import Laptop from '../Components/Laptop/Laptop';
+import { useNavigate } from 'react-router-dom';
 
 /* Assets (Audio and Fonts)*/
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -45,6 +46,7 @@ function Room(): JSX.Element {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const audioRef = useRef<HTMLAudioElement>(null);
   const copyRef = useRef<HTMLInputElement>(null);
+  const navigate = useNavigate();
 
 
   const togglePlay: Function = () => {
@@ -266,13 +268,10 @@ function Room(): JSX.Element {
                             <button type='button' className='tab-btn'>INDEX</button>
                           </li>
                           <li>
-                            <button type='button' className='tab-btn inactive'>ABOUT</button>
+                            <button type='button' className='tab-btn inactive' onClick={() => navigate('/aboutMe')}>ABOUT</button>
                           </li>
                           <li>
-                            <button type='button' className='tab-btn inactive'>WORKS</button>
-                          </li>
-                          <li>
-                            <button type='button' className='tab-btn inactive'>CONTACT</button>
+                            <button type='button' className='tab-btn inactive' onClick={() => navigate('/works')}>WORKS</button>
                           </li>
                         </ul>
                     </div>
