@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-v1/static/css/main.8c40bfd6.css",
-    "main.js": "/Portfolio-v1/static/js/main.e857fd49.js",
+    "main.css": "/Portfolio-v1/static/css/main.da965738.css",
+    "main.js": "/Portfolio-v1/static/js/main.57bfbbef.js",
     "static/media/awardSustainathonPH.png": "/Portfolio-v1/static/media/awardSustainathonPH.544b13cad622c5dbe722.png",
     "static/media/tcs.png": "/Portfolio-v1/static/media/tcs.544b13cad622c5dbe722.png",
     "static/media/sustainathonASEAN.png": "/Portfolio-v1/static/media/sustainathonASEAN.7bd89b2d6c11af388c15.png",
@@ -43,11 +43,11 @@
     "static/media/room_cup.svg": "/Portfolio-v1/static/media/room_cup.cf50299c83eb4ebef600747559f0b423.svg",
     "static/media/logo.svg": "/Portfolio-v1/static/media/logo.814e6bdb8260ceac18490ea4c529fe79.svg",
     "index.html": "/Portfolio-v1/index.html",
-    "main.8c40bfd6.css.map": "/Portfolio-v1/static/css/main.8c40bfd6.css.map",
-    "main.e857fd49.js.map": "/Portfolio-v1/static/js/main.e857fd49.js.map"
+    "main.da965738.css.map": "/Portfolio-v1/static/css/main.da965738.css.map",
+    "main.57bfbbef.js.map": "/Portfolio-v1/static/js/main.57bfbbef.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c40bfd6.css",
-    "static/js/main.e857fd49.js"
+    "static/css/main.da965738.css",
+    "static/js/main.57bfbbef.js"
   ]
 }
