@@ -9,7 +9,6 @@ import './Works.scss'
 import msersImg from '../Assets/Images/Works/msers.png'
 import portfolioImg from '../Assets/Images/Works/portfolio.png'
 import erpImg from '../Assets/Images/Works/erp.png'
-import dentalImg from '../Assets/Images/Works/dentalchart.png'
 import simulationImg from '../Assets/Images/Works/memorymanager.png'
 import { Animate } from '../Components/Animations/AnimationLibrary'
 
@@ -30,6 +29,7 @@ function Works() {
                     title='Student Engagement Detector'
                     subtitle='ReactJS + Bootstrap + Django  (Research Paper)'
                     tags={['frontend', 'backend']}
+                    redirectTo={'https://github.com/GWC523/msers-student-engagement-system'}
                 />
             </div>
             <div className='col-sm-4'>
@@ -38,6 +38,7 @@ function Works() {
                     title='My Developer Portfolio'
                     subtitle='ReactJS + Bootstrap'
                     tags={['frontend']}
+                    redirectTo={'https://github.com/GWC523/Portfolio-v1'}
                 />
             </div>
             <div className='col-sm-4'>
@@ -46,6 +47,7 @@ function Works() {
                     title='ERP System Template'
                     subtitle='ReactJS + Bootstrap'
                     tags={['frontend']}
+                    redirectTo={'https://github.com/GWC523/Enterprise-Resource-Planning-System-Template'}
                 />
             </div>
         </div>
@@ -54,18 +56,11 @@ function Works() {
         <div className='row'>
             <div className='col-sm-4'>
                 <WorkCard
-                    img={dentalImg}
-                    title='Digital Dental Chart'
-                    subtitle='ReactJS + Bootstrap'
-                    tags={['frontend']}
-                />
-            </div>
-            <div className='col-sm-4'>
-                <WorkCard
                     img={simulationImg}
                     title='Memory Management Simulation'
                     subtitle='ReactJS + Bootstrap'
                     tags={['frontend']}
+                    redirectTo={'https://github.com/GWC523/Memory-Management-Simulation'}
                 />
             </div>
         </div>

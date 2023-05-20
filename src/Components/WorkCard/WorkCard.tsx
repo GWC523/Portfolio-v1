@@ -8,9 +8,10 @@ interface WorkCardProps {
   title: string,
   subtitle: string,
   tags: any,
+  redirectTo: any
 }
 
-function WorkCard({img, title, subtitle, tags}: WorkCardProps) {
+function WorkCard({img, title, subtitle, tags, redirectTo}: WorkCardProps) {
 
   const tagContent = () => {
     let tagElements = [];
@@ -23,7 +24,7 @@ function WorkCard({img, title, subtitle, tags}: WorkCardProps) {
   }
 
   return (
-    <div className='work-card'>
+    <div className='work-card' onClick={() => window.open(redirectTo, '_blank', 'noreferrer')}>
         <img src={img} className='content-img' alt='msers'/>
             <div className='description row'>
                 <div className='col-10'>

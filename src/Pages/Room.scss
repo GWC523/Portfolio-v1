@@ -237,9 +237,9 @@ body {
 
 /** MOBILE **/
 .background-mobile {
-  background: #4e54c8;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #967362;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to bottom, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to bottom, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   position: fixed;
   top: 0;
   left: 0;
@@ -420,16 +420,16 @@ body {
 .delay-appear-4 {
   opacity: 0;
   animation: fadeIn 1s ease-in-out 4s forwards;
-  color:#3eeca9;
+  color:#191919;
 }
 
 .tagline-cont-2 {
-  font-family: 'Prime-light';
+  font-family: 'Open-sans';
   font-size:20px;
 }
 
 .big-text {
-  font-family: 'Prime-regular';
+  font-family: 'Finger-paint';
   font-weight: bold;
   font-size: 2.5em;
   padding-left: 50px;
@@ -605,7 +605,7 @@ ul.tabs li{
 }
 
 .tab-btn {
-  font-family: 'Prime-regular';
+  font-family: 'Open-sans';
   border: none;
   font-size: 15px;
   border-radius: 15px;
