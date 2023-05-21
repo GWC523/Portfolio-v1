@@ -8,10 +8,11 @@ import './Cup.scss';
 
 interface CupProps {
   func?: Function,
-  isDay: Boolean
+  isDay: Boolean,
+  link: any
 }
 
-function Cup({func, isDay} : CupProps) {
+function Cup({func, isDay, link} : CupProps) {
   const [isHovering, setIsHovering] = useState(false);
 
   const handleMouseOver = () => {
@@ -29,6 +30,7 @@ function Cup({func, isDay} : CupProps) {
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
             title='LinkedIn'
+            onClick={() => { window.open(link, '_blank', 'noreferrer') }}
         />
         {isHovering && (
             <div id='steam-wrap'>

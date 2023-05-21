@@ -203,7 +203,7 @@ function Room(): JSX.Element {
                 />
               <div className='table-cont'>
                 <div className='cup-cont'>
-                  <Cup isDay={isDay}/>
+                  <Cup isDay={isDay} link={'https://www.linkedin.com/in/gwyneth-chiu/'}/>
                 </div>
                 <div className={isDay ? 'pencilcase-cont' : 'pencilcase-cont night'}>
                     <img src={PencilCase} className='pencilcase'/>
