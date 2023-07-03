@@ -16,7 +16,7 @@ function ContactList() {
     <div className='contact-list-cont'>
         <ul className='contact-list'>
             <li>
-                <a href="mailto:gwchiu@up.edu.ph" className='mail'>
+                <a href="mailto:gwynethwongchiu@gmail.com " className='mail'>
                 <FontAwesomeIcon
                 icon={'envelope'}
                 title={'email'}

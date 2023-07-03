@@ -90,8 +90,8 @@ function Room(): JSX.Element {
     return (
       <div className='copy-modal-container'>
       <div className='copy-text'>
-        <input type='text' className='copy-text-input' ref={copyRef} value='gwchiu@up.edu.ph' />
-        <button onClick={() => handleCopyToClipboard('gwchiu@up.edu.ph')}>
+        <input type='text' className='copy-text-input' ref={copyRef} value='gwynethwongchiu@gmail.com' />
+        <button onClick={() => handleCopyToClipboard('gwynethwongchiu@gmail.com')}>
           <FontAwesomeIcon
             icon={'clone'}
             title={'copy to clipboard'}

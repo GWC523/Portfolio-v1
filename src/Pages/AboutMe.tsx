@@ -299,7 +299,7 @@ function AboutMe() {
               <>
               <div className='exp-content'>
                 <p className='role-header'>Junior Software Developer </p>
-                <p className='date-subheader'>June 2021- August 2022</p>
+                <p className='date-subheader'>June 2021 - May 2023</p>
                 <ul className='experience-list'>
                   <li>
                     Redesigned, developed, and integrated the product info page and cart to

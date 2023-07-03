@@ -133,16 +133,16 @@ body {
 
 .table-object {
   position: relative;
-  margin-top: -20px;
+  margin-top: -100px;
   // max-width: 2000px;
-  border-bottom: 300px solid #7C5B54;
+  border-bottom: 320px solid #7C5B54;
 	border-left: 250px solid transparent;
 	border-right: 250px solid transparent;
   z-index: -5;
 }
 
 .table-night {
-  border-bottom: 300px solid #412f2c;
+  border-bottom: 320px solid #412f2c;
 }
 
 .pencilcase {
@@ -156,21 +156,22 @@ body {
   width: 98px;
   position: relative;
   margin-top: -68vh;
-  left: -200%;
+  left: -180%;
   z-index: 5;
 }
 
 .window {
   width:600px;
   position: relative;
-  margin-top: -540px;
+  margin-top: -750px;
   margin-left: 0px;
 }
 
 .shelf {
   width: 400px;
   position: relative;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   margin-left: -1200px;
 }
 
@@ -186,15 +187,15 @@ body {
 .room-title{
   width: 120px;
   position: relative;
-  margin-top: -480px;
-  margin-left: 720px;
+  margin-top: -620px;
+  margin-left: 750px;
   z-index: 20;
 }
 
 .room-tagline{
   width: 140px;
   position: relative;
-  margin-top: -340px;
+  margin-top: -480px;
   margin-left: 775px;
   z-index: 20;
 }
@@ -202,7 +203,7 @@ body {
 .note {
   width: 80px;
   position: relative;
-  margin-top: -15px;
+  margin-top: -955px;
   margin-left: 720px;
   z-index: 20;
 }
