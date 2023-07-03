@@ -275,9 +275,6 @@ function AboutMe() {
                 <p className='date-subheader'>July 2021 – Oct 2022</p>
                 <ul className='experience-list'>
                   <li>
-                    Reworked and improved the front-end for a booking site of a company.
-                  </li>
-                  <li>
                     Built a billing list system for a construction supplier company.
                   </li>
                   <li>
