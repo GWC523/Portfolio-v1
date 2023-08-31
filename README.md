@@ -11,7 +11,7 @@
 ✨ Render Loader\
 ✨ Fully Responsive
 
-View Site: https://gwc523.github.io/Portfolio-v1/
+View Site: www.gwynethsdesk.com
 
 ## How to Use ⚒️
 
