@@ -194,6 +194,9 @@ function Room(): JSX.Element {
                     isDay={isDay}
                 />
               </div>
+                <div className={isDay ? 'vase-cont' : 'vase-cont night'}>
+                    <img src={Vase} className='vase'/>
+                </div>
                 <Modal
                   title='Contact Me'
                   subTitle='via email'
@@ -207,9 +210,6 @@ function Room(): JSX.Element {
                 </div>
                 <div className={isDay ? 'pencilcase-cont' : 'pencilcase-cont night'}>
                     <img src={PencilCase} className='pencilcase'/>
-                </div>
-                <div className={isDay ? 'vase-cont' : 'vase-cont night'}>
-                    <img src={Vase} className='vase'/>
                 </div>
                 <div className='letters-cont'>
                     <Letters isDay={isDay} setShowModal={setShowModal}/>

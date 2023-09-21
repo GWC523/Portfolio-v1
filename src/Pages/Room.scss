@@ -85,6 +85,13 @@ body {
   margin-top: 0%;
 }
 
+.vase-cont {
+	width: 110px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0%;
+}
+
 .cup-cont {
 	width: 130px;
   margin-right: auto;
@@ -93,12 +100,6 @@ body {
 
 .pencilcase-cont {
 	width: 80px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.vase-cont {
-	width: 110px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -135,7 +136,7 @@ body {
   position: relative;
   margin-top: -100px;
   // max-width: 2000px;
-  border-bottom: 320px solid #7C5B54;
+  border-bottom: 300px solid #7C5B54;
 	border-left: 250px solid transparent;
 	border-right: 250px solid transparent;
   z-index: -5;
@@ -148,14 +149,14 @@ body {
 .pencilcase {
   width: 90px;
   position: relative;
-  margin-top: -45vh;
+  margin-top: -460px;
   left: 250%;
 }
 
 .vase {
   width: 98px;
   position: relative;
-  margin-top: -68vh;
+  margin-top: -500px;
   left: -180%;
   z-index: 5;
 }
