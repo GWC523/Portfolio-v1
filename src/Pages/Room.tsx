@@ -141,7 +141,7 @@ function Room(): JSX.Element {
   return (
     <>
         {(!isMobile)? (
-            <div className={isDay ? 'background' : 'background-night'}>
+            <div className={isDay ? 'background unselectable' : 'background-night unselectable'}>
               {!isLoading && (<Loader/>)}
               <img src={Shelf} className={isDay ? 'shelf' : 'shelf night'}/>
               <img src={Plant} className={isDay ? 'plant' : 'plant night'}/>
@@ -152,49 +152,49 @@ function Room(): JSX.Element {
                   state={isOn}
                 />
               </div>
-              <div className='string-light-cont'>
+              <div className='string-light-cont unselectable'>
                 <Light
                   isOn={isOn}
                   isDay={isDay}
                 />
               </div>
-              <div className={isDay ? 'pictures-cont' : 'pictures-cont night'}>
+              <div className={isDay ? 'pictures-cont unselectable' : 'pictures-cont unselectable night'}>
                 <Pictures/>
               </div>
-              <div className='room-title-cont'>
+              <div className='room-title-cont unselectable'>
                 <img src={RoomTitle} className={isDay ? 'room-title' : 'room-title night'}/>
               </div>
               <div className='room-tagline-cont'>
                 <img src={RoomTagline} className={isDay ? 'room-tagline' : 'room-tagline night'}/>
               </div>
-              <div className={'resume-cont'}>
+              <div className={'resume-cont unselectable'} >
                 <Resume
                   isDay={isDay}
                 />
               </div>
-              <div className='note-cont'>
+              <div className='note-cont unselectable'>
                 <img src={Note} alt='note' className={isDay ? 'note' : 'note night'}/>
               </div>
-              <div className='window-cont'>
+              <div className='window-cont unselectable'>
                 <img src={Window} className={isDay ? 'window' : 'window night-2'}/>
               </div>
-              <div className='table-wrapper'>
+              <div className='table-wrapper unselectable'>
                   <div className={isDay ? 'table-object' : 'table-object table-night'}></div>
               </div>
-              <div className='laptop-cont'>
+              <div className='laptop-cont unselectable'>
                 <Laptop
                   isDay={isDay}
                   path={'works'}
                 />
               </div>
-              <div className='cassette-cont'>
+              <div className='cassette-cont unselectable'>
                 <Cassette 
                     func={togglePlay}
                     isPlaying={isPlaying}
                     isDay={isDay}
                 />
               </div>
-                <div className={isDay ? 'vase-cont' : 'vase-cont night'}>
+                <div className={isDay ? 'vase-cont unselectable' : 'vase-cont unselectable night'}>
                     <img src={Vase} className='vase'/>
                 </div>
                 <Modal
@@ -204,14 +204,14 @@ function Room(): JSX.Element {
                   setShowModal={setShowModal}
                   children={copyToClipboardInput()}
                 />
-              <div className='table-cont'>
+              <div className='table-cont unselectable'>
                 <div className='cup-cont'>
                   <Cup isDay={isDay} link={'https://www.linkedin.com/in/gwyneth-chiu/'}/>
                 </div>
                 <div className={isDay ? 'pencilcase-cont' : 'pencilcase-cont night'}>
                     <img src={PencilCase} className='pencilcase'/>
                 </div>
-                <div className='letters-cont'>
+                <div className='letters-cont '>
                     <Letters isDay={isDay} setShowModal={setShowModal}/>
                 </div>
                 <div className='time-cont'>

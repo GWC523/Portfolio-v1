@@ -2,6 +2,16 @@ body {
   margin: 0;
 }
 
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
 .background {
     background-color: #FAE5BB;
     position: fixed;
@@ -143,7 +153,7 @@ body {
 }
 
 .table-night {
-  border-bottom: 320px solid #412f2c;
+  border-bottom: 300px solid #412f2c;
 }
 
 .pencilcase {
@@ -197,7 +207,7 @@ body {
   width: 140px;
   position: relative;
   margin-top: -480px;
-  margin-left: 775px;
+  margin-left: 975px;
   z-index: 20;
 }
 
