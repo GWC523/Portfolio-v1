@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.7b56edb9.css",
+    "main.css": "/static/css/main.11eb4dde.css",
     "main.js": "/static/js/main.2d2ad9aa.js",
     "static/media/awardSustainathonPH.png": "/static/media/awardSustainathonPH.544b13cad622c5dbe722.png",
     "static/media/tcs.png": "/static/media/tcs.544b13cad622c5dbe722.png",
@@ -43,11 +43,11 @@
     "static/media/room_cup.svg": "/static/media/room_cup.cf50299c83eb4ebef600747559f0b423.svg",
     "static/media/logo.svg": "/static/media/logo.814e6bdb8260ceac18490ea4c529fe79.svg",
     "index.html": "/index.html",
-    "main.7b56edb9.css.map": "/static/css/main.7b56edb9.css.map",
+    "main.11eb4dde.css.map": "/static/css/main.11eb4dde.css.map",
     "main.2d2ad9aa.js.map": "/static/js/main.2d2ad9aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b56edb9.css",
+    "static/css/main.11eb4dde.css",
     "static/js/main.2d2ad9aa.js"
   ]
 }
